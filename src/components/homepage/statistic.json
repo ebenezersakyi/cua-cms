@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_homepage_statistics",
+  "info": {
+    "displayName": "Statistic",
+    "description": "Homepage statistic"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string"
+    },
+    "value": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

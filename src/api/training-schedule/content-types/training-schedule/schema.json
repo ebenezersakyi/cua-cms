@@ -1,0 +1,60 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_schedules",
+  "info": {
+    "singularName": "training-schedule",
+    "pluralName": "training-schedules",
+    "displayName": "Training Schedule",
+    "description": "Scheduled training sessions"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "course": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::training-course.training-course",
+      "required": true
+    },
+    "startDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "endDate": {
+      "type": "datetime",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true
+    },
+    "venue": {
+      "type": "string"
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "availableSeats": {
+      "type": "integer"
+    },
+    "registrationDeadline": {
+      "type": "date"
+    },
+    "registrationLink": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Open", "Full", "Cancelled", "Completed"],
+      "default": "Open"
+    },
+    "notes": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "success_stories",
+  "info": {
+    "singularName": "success-story",
+    "pluralName": "success-stories",
+    "displayName": "Success Story",
+    "description": "Member and credit union success testimonials"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "story": {
+      "type": "richtext",
+      "required": true
+    },
+    "personName": {
+      "type": "string",
+      "required": true
+    },
+    "personRole": {
+      "type": "string"
+    },
+    "creditUnion": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::credit-union.credit-union"
+    },
+    "featuredImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Business Growth",
+        "Agricultural",
+        "Personal Finance",
+        "Community Impact",
+        "Women Empowerment"
+      ]
+    },
+    "impact": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact.impact-metric"
+    },
+    "isFeatured": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

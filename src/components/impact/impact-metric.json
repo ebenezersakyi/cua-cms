@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_impact_impact_metrics",
+  "info": {
+    "displayName": "Impact Metric",
+    "description": "Impact measurement"
+  },
+  "options": {},
+  "attributes": {
+    "metricName": {
+      "type": "string"
+    },
+    "metricValue": {
+      "type": "string"
+    }
+  }
+}

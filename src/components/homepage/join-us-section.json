@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_homepage_join_us_sections",
+  "info": {
+    "displayName": "Join Us Section",
+    "description": "Homepage join us section"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

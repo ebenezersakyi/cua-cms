@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_location_gps_locations",
+  "info": {
+    "displayName": "GPS Location",
+    "description": "GPS coordinates"
+  },
+  "options": {},
+  "attributes": {
+    "latitude": {
+      "type": "decimal"
+    },
+    "longitude": {
+      "type": "decimal"
+    }
+  }
+}

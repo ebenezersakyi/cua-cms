@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_service_service_items",
+  "info": {
+    "displayName": "Service Item",
+    "description": "Service offered"
+  },
+  "options": {},
+  "attributes": {
+    "serviceName": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}

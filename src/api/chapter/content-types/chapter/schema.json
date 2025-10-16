@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "chapters",
+  "info": {
+    "singularName": "chapter",
+    "pluralName": "chapters",
+    "displayName": "Chapter",
+    "description": "Regional CUA chapters information"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "chapterName": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "chapterName",
+      "required": true
+    },
+    "region": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "address": {
+      "type": "text"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "chairperson": {
+      "type": "string"
+    },
+    "secretary": {
+      "type": "string"
+    },
+    "creditUnionsCount": {
+      "type": "integer"
+    },
+    "totalMembers": {
+      "type": "integer"
+    },
+    "establishedYear": {
+      "type": "integer"
+    },
+    "coverImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "activities": {
+      "type": "richtext"
+    },
+    "credit_unions": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::credit-union.credit-union",
+      "mappedBy": "chapter"
+    }
+  }
+}

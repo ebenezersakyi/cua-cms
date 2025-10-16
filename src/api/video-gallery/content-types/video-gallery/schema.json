@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_galleries",
+  "info": {
+    "singularName": "video-gallery",
+    "pluralName": "video-galleries",
+    "displayName": "Video Gallery",
+    "description": "Video content library"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "videoUrl": {
+      "type": "string",
+      "required": true
+    },
+    "thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "duration": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Events", "Training", "Testimonials", "Documentaries", "Interviews"]
+    },
+    "viewCount": {
+      "type": "integer",
+      "default": 0
+    }
+  }
+}

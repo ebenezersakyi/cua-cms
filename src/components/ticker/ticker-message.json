@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_ticker_ticker_messages",
+  "info": {
+    "displayName": "Ticker Message",
+    "description": "Scrolling ticker message"
+  },
+  "options": {},
+  "attributes": {
+    "text": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

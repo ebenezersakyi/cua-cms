@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "downloads",
+  "info": {
+    "singularName": "download",
+    "pluralName": "downloads",
+    "displayName": "Download",
+    "description": "Downloadable resources, forms, and documents"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": ["files", "images"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Annual Reports", "Forms", "Policies", "Publications", "Guidelines", "Templates"]
+    },
+    "fileSize": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "downloadCount": {
+      "type": "integer",
+      "default": 0
+    },
+    "isPublic": {
+      "type": "boolean",
+      "default": true
+    },
+    "requiresLogin": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

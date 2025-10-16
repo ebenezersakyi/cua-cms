@@ -1,0 +1,74 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_courses",
+  "info": {
+    "singularName": "training-course",
+    "pluralName": "training-courses",
+    "displayName": "Training Course",
+    "description": "CUTRAC training programs and courses"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "courseName": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "courseName",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "duration": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": ["Beginner", "Intermediate", "Advanced"]
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": ["Financial Management", "Leadership", "Compliance", "Technology", "Operations"]
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "currency": {
+      "type": "string",
+      "default": "GHS"
+    },
+    "objectives": {
+      "type": "richtext"
+    },
+    "targetAudience": {
+      "type": "richtext"
+    },
+    "prerequisites": {
+      "type": "richtext"
+    },
+    "syllabus": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["files"]
+    },
+    "instructor": {
+      "type": "string"
+    },
+    "maxParticipants": {
+      "type": "integer"
+    },
+    "certificationOffered": {
+      "type": "boolean"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
