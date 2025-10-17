@@ -999,7 +999,7 @@ export interface ApiPartnerPartner extends Struct.CollectionTypeSchema {
     logo: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     name: Schema.Attribute.String & Schema.Attribute.Required;
     partnershipType: Schema.Attribute.Enumeration<
-      ['Strategic', 'Funding', 'Technical', 'Advocacy']
+      ['Strategic', 'Funding', 'Technical', 'Advocacy', 'International']
     >;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'> & Schema.Attribute.Required;

@@ -1,0 +1,424 @@
+{
+  "heroSlides": [
+    {
+      "title": "Empowering Communities Through Credit Unions",
+      "subtext": "Building stronger financial futures for Ghanaians through cooperative banking and community-driven financial services.",
+      "ctaText": "Join a Credit Union",
+      "ctaLink": "/find-credit-union",
+      "order": 0,
+      "isActive": true,
+      "backgroundImage": "hero1.jpg"
+    },
+    {
+      "title": "Your Financial Partner",
+      "subtext": "Discover how credit unions provide accessible banking, loans, and savings solutions tailored to your community's needs.",
+      "ctaText": "Our Services",
+      "ctaLink": "/our-work/what-we-do",
+      "order": 1,
+      "isActive": true,
+      "backgroundImage": "hero2.jpg"
+    },
+    {
+      "title": "Strengthening Ghana's Economy",
+      "subtext": "Supporting local businesses and individuals with cooperative financial services that drive economic growth and prosperity.",
+      "ctaText": "Learn More",
+      "ctaLink": "/about-us/who-we-are",
+      "order": 2,
+      "isActive": true,
+      "backgroundImage": "hero3.jpg"
+    }
+  ],
+  "newsArticles": [
+    {
+      "title": "CUA Announces New Research Center for Sustainable Technology",
+      "slug": "research-center-sustainable-technology",
+      "publishedDate": "2024-12-15T00:00:00.000Z",
+      "isTickerItem": true,
+      "isFeatured": false,
+      "excerpt": "CUA Ghana is establishing a new research center focused on sustainable technology solutions for credit unions.",
+      "content": "<p>The Credit Union Association (CUA) of Ghana is proud to announce the establishment of a new research center dedicated to sustainable technology solutions for credit unions across the country.</p><p>This initiative aims to enhance the technological capabilities of credit unions, enabling them to serve their members more efficiently and compete in the modern financial landscape.</p>",
+      "featuredImage": "news-research-center.jpg"
+    },
+    {
+      "title": "Cardinals Basketball Team Advances to Championship Finals",
+      "slug": "basketball-championship-finals",
+      "publishedDate": "2024-12-12T00:00:00.000Z",
+      "isTickerItem": true,
+      "isFeatured": false,
+      "excerpt": "The CUA Cardinals basketball team has advanced to the championship finals after a stunning victory.",
+      "content": "<p>The CUA Cardinals basketball team has made history by advancing to the championship finals. The team's dedication and teamwork have paid off in spectacular fashion.</p>",
+      "featuredImage": "news-basketball.jpg"
+    },
+    {
+      "title": "Spring 2025 Registration Opens for All Students",
+      "slug": "spring-2025-registration",
+      "publishedDate": "2024-12-10T00:00:00.000Z",
+      "isTickerItem": true,
+      "isFeatured": false,
+      "excerpt": "Registration for Spring 2025 training programs is now open to all credit union professionals.",
+      "content": "<p>CUA Ghana is pleased to announce that registration for Spring 2025 training programs through CUTRAC is now open. Members can register for various professional development courses.</p>",
+      "featuredImage": "news-registration.jpg"
+    },
+    {
+      "title": "Distinguished Alumni Awards Ceremony This Weekend",
+      "slug": "alumni-awards-ceremony",
+      "publishedDate": "2024-12-08T00:00:00.000Z",
+      "isTickerItem": true,
+      "isFeatured": false,
+      "excerpt": "Join us this weekend for the annual Alumni Awards Ceremony celebrating outstanding credit union leaders.",
+      "content": "<p>The annual Alumni Awards Ceremony will take place this weekend, honoring outstanding leaders in the credit union movement who have made significant contributions to financial inclusion in Ghana.</p>",
+      "featuredImage": "news-awards.jpg"
+    },
+    {
+      "title": "New Library Hours Extended for Final Exams Period",
+      "slug": "library-hours-extended",
+      "publishedDate": "2024-12-05T00:00:00.000Z",
+      "isTickerItem": true,
+      "isFeatured": false,
+      "excerpt": "Resource center hours have been extended during the final exams period to support credit union training participants.",
+      "content": "<p>To better support our training participants during the final examination period, the CUA resource center has extended its operating hours. The center will now be open until 10 PM on weekdays.</p>",
+      "featuredImage": "news-library.jpg"
+    }
+  ],
+  "events": [
+    {
+      "title": "Financial Literacy Training",
+      "slug": "financial-literacy-training",
+      "shortDescription": "Comprehensive training program for small business owners",
+      "description": "<p>Comprehensive training program for small business owners to improve financial management skills and access to credit union services.</p><p>This program covers budgeting, financial planning, loan management, and understanding credit union membership benefits.</p>",
+      "eventDate": "2025-03-15",
+      "isFeatured": true,
+      "category": "Financial Literacy",
+      "status": "Upcoming",
+      "featuredImage": "event-financial-literacy.jpg"
+    },
+    {
+      "title": "Agricultural Development Program",
+      "slug": "agricultural-development-program",
+      "shortDescription": "Supporting local farmers with microfinance solutions",
+      "description": "<p>Supporting local farmers with microfinance solutions and modern farming techniques to boost agricultural productivity.</p><p>Learn about agricultural loans, farm business management, and cooperative farming models.</p>",
+      "eventDate": "2025-04-08",
+      "isFeatured": true,
+      "category": "Agricultural",
+      "status": "Upcoming",
+      "featuredImage": "event-agriculture.jpg"
+    },
+    {
+      "title": "Women Empowerment Initiative",
+      "slug": "women-empowerment-initiative",
+      "shortDescription": "Empowering women entrepreneurs through access to credit",
+      "description": "<p>Empowering women entrepreneurs through access to credit, business training, and cooperative banking solutions.</p><p>This initiative focuses on providing women with the financial tools and knowledge needed to grow their businesses and achieve financial independence.</p>",
+      "eventDate": "2025-05-22",
+      "isFeatured": true,
+      "category": "Women Empowerment",
+      "status": "Upcoming",
+      "featuredImage": "event-women-empowerment.jpg"
+    }
+  ],
+  "partners": [
+    {
+      "name": "ACCOSCA",
+      "slug": "accosca",
+      "description": "<p>African Confederation of Co-operative Savings and Credit Association - The apex organization for credit union movements in Africa.</p>",
+      "logo": "accosca.png",
+      "website": "https://www.accosca.org",
+      "partnershipType": "International",
+      "isActive": true,
+      "displayOrder": 1
+    },
+    {
+      "name": "Canadian Co-operative Association",
+      "slug": "canadian-cooperative-association",
+      "description": "<p>National association representing co-operative enterprises in Canada, providing technical support and capacity building.</p>",
+      "logo": "cca.png",
+      "partnershipType": "Technical",
+      "isActive": true,
+      "displayOrder": 2
+    },
+    {
+      "name": "GIZ",
+      "slug": "giz",
+      "description": "<p>Deutsche Gesellschaft für Internationale Zusammenarbeit - German development cooperation agency supporting financial inclusion.</p>",
+      "logo": "giz.png",
+      "website": "https://www.giz.de",
+      "partnershipType": "Funding",
+      "isActive": true,
+      "displayOrder": 3
+    },
+    {
+      "name": "Irish League of Credit Unions",
+      "slug": "ilcu",
+      "description": "<p>Representative body for credit unions in Ireland, supporting international credit union development.</p>",
+      "logo": "ilcu.png",
+      "website": "https://www.creditunion.ie",
+      "partnershipType": "Technical",
+      "isActive": true,
+      "displayOrder": 4
+    },
+    {
+      "name": "KAD",
+      "slug": "kad",
+      "description": "<p>Partner organization supporting credit union development initiatives across West Africa.</p>",
+      "logo": "kad.png",
+      "partnershipType": "Strategic",
+      "isActive": true,
+      "displayOrder": 5
+    },
+    {
+      "name": "SEND Ghana",
+      "slug": "send-ghana",
+      "description": "<p>Social Enterprise Development Foundation - Supporting community-based development initiatives across Ghana.</p>",
+      "logo": "send.png",
+      "website": "https://www.sendwestafrica.org",
+      "partnershipType": "Strategic",
+      "isActive": true,
+      "displayOrder": 6
+    },
+    {
+      "name": "Sparkassenstiftung",
+      "slug": "sparkassenstiftung",
+      "description": "<p>Savings Banks Foundation for International Cooperation - German foundation supporting financial sector development worldwide.</p>",
+      "logo": "sparkassenstiftung.png",
+      "website": "https://www.sparkassenstiftung.de",
+      "partnershipType": "Funding",
+      "isActive": true,
+      "displayOrder": 7
+    },
+    {
+      "name": "WOCCU",
+      "slug": "woccu",
+      "description": "<p>World Council of Credit Unions - Global trade association and development agency for credit unions.</p>",
+      "logo": "woccu.png",
+      "website": "https://www.woccu.org",
+      "partnershipType": "International",
+      "isActive": true,
+      "displayOrder": 8
+    }
+  ],
+  "creditUnions": [
+    {
+      "name": "Ghana Police Credit Union",
+      "slug": "ghana-police-credit-union",
+      "region": "Greater Accra",
+      "category": "Large",
+      "grade": "A+",
+      "isTop20": true,
+      "ranking": 1,
+      "isActive": true,
+      "isFeatured": true,
+      "description": "<p>The Ghana Police Credit Union serves members of the Ghana Police Service and their families, providing comprehensive financial services including savings, loans, and investment products.</p>"
+    },
+    {
+      "name": "Ghana Education Service Credit Union",
+      "slug": "ghana-education-service-credit-union",
+      "region": "Ashanti",
+      "category": "Large",
+      "grade": "A+",
+      "isTop20": true,
+      "ranking": 2,
+      "isActive": true,
+      "isFeatured": true,
+      "description": "<p>Serving educators across Ghana, the GES Credit Union is one of the largest and most respected credit unions in the country.</p>"
+    },
+    {
+      "name": "Armed Forces Credit Union",
+      "slug": "armed-forces-credit-union",
+      "region": "Greater Accra",
+      "category": "Large",
+      "grade": "A",
+      "isTop20": true,
+      "ranking": 3,
+      "isActive": true,
+      "isFeatured": true,
+      "description": "<p>The Armed Forces Credit Union provides financial services to military personnel and their families.</p>"
+    },
+    {
+      "name": "Health Service Workers Credit Union",
+      "slug": "health-service-workers-credit-union",
+      "region": "Ashanti",
+      "category": "Large",
+      "grade": "A",
+      "isTop20": true,
+      "ranking": 4,
+      "isActive": true,
+      "isFeatured": true,
+      "description": "<p>Dedicated to serving healthcare workers across Ghana with accessible financial services.</p>"
+    },
+    {
+      "name": "Civil Servants Credit Union",
+      "slug": "civil-servants-credit-union",
+      "region": "Greater Accra",
+      "category": "Medium",
+      "grade": "A",
+      "isTop20": true,
+      "ranking": 5,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Cocoa Board Staff Credit Union",
+      "slug": "cocoa-board-staff-credit-union",
+      "region": "Eastern",
+      "category": "Medium",
+      "grade": "B+",
+      "isTop20": true,
+      "ranking": 6,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "University of Ghana Credit Union",
+      "slug": "university-of-ghana-credit-union",
+      "region": "Greater Accra",
+      "category": "Medium",
+      "grade": "B+",
+      "isTop20": true,
+      "ranking": 7,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "KNUST Workers Credit Union",
+      "slug": "knust-workers-credit-union",
+      "region": "Ashanti",
+      "category": "Medium",
+      "grade": "B+",
+      "isTop20": true,
+      "ranking": 8,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Social Security Credit Union",
+      "slug": "social-security-credit-union",
+      "region": "Greater Accra",
+      "category": "Medium",
+      "grade": "B",
+      "isTop20": true,
+      "ranking": 9,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Ghana Ports and Harbours Credit Union",
+      "slug": "ghana-ports-and-harbours-credit-union",
+      "region": "Greater Accra",
+      "category": "Small",
+      "grade": "B",
+      "isTop20": true,
+      "ranking": 10,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Electricity Company Staff Credit Union",
+      "slug": "electricity-company-staff-credit-union",
+      "region": "Western",
+      "category": "Small",
+      "grade": "B",
+      "isTop20": true,
+      "ranking": 11,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Ghana Water Company Credit Union",
+      "slug": "ghana-water-company-credit-union",
+      "region": "Ashanti",
+      "category": "Small",
+      "grade": "B",
+      "isTop20": true,
+      "ranking": 12,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Tema Oil Refinery Credit Union",
+      "slug": "tema-oil-refinery-credit-union",
+      "region": "Greater Accra",
+      "category": "Small",
+      "grade": "B-",
+      "isTop20": true,
+      "ranking": 13,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Post Office Workers Credit Union",
+      "slug": "post-office-workers-credit-union",
+      "region": "Northern",
+      "category": "Small",
+      "grade": "B-",
+      "isTop20": true,
+      "ranking": 14,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Judicial Service Credit Union",
+      "slug": "judicial-service-credit-union",
+      "region": "Greater Accra",
+      "category": "Small",
+      "grade": "C+",
+      "isTop20": true,
+      "ranking": 15,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Ghana Railway Credit Union",
+      "slug": "ghana-railway-credit-union",
+      "region": "Ashanti",
+      "category": "Small",
+      "grade": "C+",
+      "isTop20": true,
+      "ranking": 16,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Forestry Commission Credit Union",
+      "slug": "forestry-commission-credit-union",
+      "region": "Bono",
+      "category": "Small",
+      "grade": "C+",
+      "isTop20": true,
+      "ranking": 17,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Ghana Broadcasting Credit Union",
+      "slug": "ghana-broadcasting-credit-union",
+      "region": "Greater Accra",
+      "category": "Small",
+      "grade": "C",
+      "isTop20": true,
+      "ranking": 18,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Fire Service Credit Union",
+      "slug": "fire-service-credit-union",
+      "region": "Central",
+      "category": "Small",
+      "grade": "C",
+      "isTop20": true,
+      "ranking": 19,
+      "isActive": true,
+      "isFeatured": false
+    },
+    {
+      "name": "Prison Service Credit Union",
+      "slug": "prison-service-credit-union",
+      "region": "Upper East",
+      "category": "Small",
+      "grade": "C",
+      "isTop20": true,
+      "ranking": 20,
+      "isActive": true,
+      "isFeatured": false
+    }
+  ]
+}
