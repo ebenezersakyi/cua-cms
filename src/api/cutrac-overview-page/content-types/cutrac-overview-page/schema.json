@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "cutrac_overview_pages",
+  "info": {
+    "singularName": "cutrac-overview-page",
+    "pluralName": "cutrac-overview-pages",
+    "displayName": "Training: CUTRAC Overview Page",
+    "description": "Page content for CUTRAC overview"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "missionSection": {
+      "type": "component",
+      "component": "sections.mission-vision-values",
+      "required": true
+    },
+    "servicesSection": {
+      "type": "component",
+      "component": "sections.services-grid",
+      "required": true
+    },
+    "programsSection": {
+      "type": "component",
+      "component": "sections.training-programs",
+      "required": true
+    },
+    "statsSection": {
+      "type": "component",
+      "component": "sections.stats-highlight",
+      "required": true
+    },
+    "facilitiesSection": {
+      "type": "component",
+      "component": "sections.facilities-list",
+      "required": true
+    },
+    "partnersSection": {
+      "type": "component",
+      "component": "sections.partners-logos",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

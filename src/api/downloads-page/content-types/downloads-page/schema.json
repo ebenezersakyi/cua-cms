@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "downloads_pages",
+  "info": {
+    "singularName": "downloads-page",
+    "pluralName": "downloads-pages",
+    "displayName": "Media: Downloads Page",
+    "description": "Downloads page configuration with hero section and help information"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "helpSection": {
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

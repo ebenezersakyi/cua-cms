@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_story_categories",
+  "info": {
+    "displayName": "Story Category",
+    "description": "Individual story category item",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-folder"
+    },
+    "color": {
+      "type": "string",
+      "default": "#003366"
+    }
+  }
+}

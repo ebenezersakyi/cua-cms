@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_shared_impact_stats",
+  "info": {
+    "displayName": "Impact Statistic",
+    "description": "Statistical data for impact section",
+    "icon": "chartLine"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true
+    },
+    "value": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-chart-line"
+    },
+    "description": {
+      "type": "text"
+    },
+    "suffix": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_detailed_steps",
+  "info": {
+    "displayName": "Detailed Step",
+    "description": "Individual detailed step with sub-items",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-arrow-right"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

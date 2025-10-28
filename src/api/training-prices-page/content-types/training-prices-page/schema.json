@@ -1,0 +1,59 @@
+{
+  "kind": "singleType",
+  "collectionName": "training_prices_pages",
+  "info": {
+    "singularName": "training-prices-page",
+    "pluralName": "training-prices-pages",
+    "displayName": "Training: Prices Page",
+    "description": "Training prices page with facilities, accommodation, and meals pricing"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "hallFacilities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.fee-structure-table",
+      "required": true
+    },
+    "accommodation": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.fee-structure-table",
+      "required": true
+    },
+    "meals": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.fee-structure-table",
+      "required": true
+    },
+    "importantNotes": {
+      "type": "richtext",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "lastUpdated": {
+      "type": "date",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

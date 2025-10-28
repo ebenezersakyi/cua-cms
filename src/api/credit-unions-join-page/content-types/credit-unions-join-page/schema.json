@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "credit_unions_join_pages",
+  "info": {
+    "singularName": "credit-unions-join-page",
+    "pluralName": "credit-unions-join-pages",
+    "displayName": "Credit Unions Join Page",
+    "description": "Page content for Join a Credit Union page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-with-cta",
+      "required": true
+    },
+    "whyJoinSection": {
+      "type": "component",
+      "component": "sections.icon-benefits-grid",
+      "required": true
+    },
+    "howToJoinSection": {
+      "type": "component",
+      "component": "sections.detailed-steps",
+      "required": true
+    },
+    "eligibilitySection": {
+      "type": "component",
+      "component": "sections.eligibility-types",
+      "required": true
+    },
+    "documentationSection": {
+      "type": "component",
+      "component": "sections.documentation-requirements",
+      "required": true
+    },
+    "faqSection": {
+      "type": "component",
+      "component": "sections.faq-accordion",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "collectionName": "components_about_pages_core_role_items",
+  "info": {
+    "displayName": "Core Role Item",
+    "description": "Core role or capability item",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-shield-alt", "fa-file-alt", "fa-check-circle", "fa-chart-line", "fa-users",
+        "fa-globe", "fa-award", "fa-bullseye", "fa-eye", "fa-briefcase",
+        "fa-cogs", "fa-handshake", "fa-university", "fa-gavel", "fa-clipboard-check",
+        "fa-book", "fa-graduation-cap", "fa-balance-scale", "fa-stamp", "fa-search"
+      ],
+      "required": true,
+      "default": "fa-briefcase"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "color_scheme": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true,
+      "default": "#3b82f6",
+      "options": {
+        "format": "hex"
+      }
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_fee_items",
+  "info": {
+    "displayName": "Fee Item",
+    "description": "Individual fee item",
+    "icon": "dollar"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "amount": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "frequency": {
+      "type": "enumeration",
+      "enum": ["One-time", "Monthly", "Quarterly", "Annually"],
+      "default": "One-time"
+    }
+  }
+}

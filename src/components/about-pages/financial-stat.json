@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_about_pages_financial_stats",
+  "info": {
+    "displayName": "Financial Stat",
+    "description": "Financial statistic item",
+    "icon": "dollarSign"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-chart-pie", "fa-chart-line", "fa-dollar-sign", "fa-coins", "fa-money-bill-wave",
+        "fa-piggy-bank", "fa-hand-holding-usd", "fa-wallet", "fa-credit-card", "fa-file-invoice-dollar",
+        "fa-receipt", "fa-percentage", "fa-balance-scale", "fa-calculator", "fa-landmark"
+      ],
+      "required": true,
+      "default": "fa-chart-pie"
+    },
+    "amount": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "sublabel": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "color_scheme": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true,
+      "default": "#10b981",
+      "options": {
+        "format": "hex"
+      }
+    }
+  }
+}

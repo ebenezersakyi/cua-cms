@@ -103,6 +103,12 @@
       "relation": "manyToOne",
       "target": "api::chapter.chapter",
       "inversedBy": "credit_unions"
+    },
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial-member.testimonial-member",
+      "mappedBy": "creditUnion"
     }
   }
 }

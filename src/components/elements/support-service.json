@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_elements_support_services",
+  "info": {
+    "displayName": "Support Service",
+    "description": "Individual support service",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-hand-holding-heart"
+    }
+  }
+}

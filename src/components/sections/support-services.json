@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_support_services",
+  "info": {
+    "displayName": "Support Services",
+    "description": "Support services offered section",
+    "icon": "handHeart"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "How We Can Help"
+    },
+    "description": {
+      "type": "text"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.support-service"
+    }
+  }
+}

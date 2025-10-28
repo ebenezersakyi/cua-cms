@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_chapter_leadership_members",
+  "info": {
+    "displayName": "Leadership Member",
+    "description": "Chapter leadership or board member",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "position": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "society": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "profession": {
+      "type": "string",
+      "maxLength": 100
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "collectionName": "components_about_pages_key_stats",
+  "info": {
+    "displayName": "Key Stat",
+    "description": "Key statistic item",
+    "icon": "chartLine"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-users", "fa-home", "fa-building", "fa-chart-line", "fa-chart-bar",
+        "fa-chart-pie", "fa-dollar-sign", "fa-coins", "fa-piggy-bank", "fa-wallet",
+        "fa-hand-holding-usd", "fa-percentage", "fa-calculator", "fa-clipboard-list", "fa-file-invoice-dollar"
+      ],
+      "required": true,
+      "default": "fa-chart-bar"
+    },
+    "number": {
+      "type": "string",
+      "required": true
+    },
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "color": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true,
+      "default": "#3b82f6",
+      "options": {
+        "format": "hex"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_elements_resource_items",
+  "info": {
+    "displayName": "Resource Item",
+    "description": "Individual downloadable resource",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"]
+    },
+    "externalLink": {
+      "type": "string"
+    },
+    "fileType": {
+      "type": "string"
+    },
+    "fileSize": {
+      "type": "string"
+    }
+  }
+}

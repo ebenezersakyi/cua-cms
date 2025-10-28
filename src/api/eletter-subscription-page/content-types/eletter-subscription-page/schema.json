@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "eletter_subscription_pages",
+  "info": {
+    "singularName": "eletter-subscription-page",
+    "pluralName": "eletter-subscription-pages",
+    "displayName": "Media: eLetter Subscription Page",
+    "description": "Newsletter subscription page with benefits and form configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.icon-benefits-grid",
+      "required": true
+    },
+    "privacyNotice": {
+      "type": "richtext",
+      "required": true
+    },
+    "successMessage": {
+      "type": "json",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

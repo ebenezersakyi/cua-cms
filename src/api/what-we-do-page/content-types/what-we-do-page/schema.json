@@ -1,0 +1,52 @@
+{
+  "kind": "singleType",
+  "collectionName": "what_we_do_pages",
+  "info": {
+    "singularName": "what-we-do-page",
+    "pluralName": "what-we-do-pages",
+    "displayName": "Our Work: What We Do",
+    "description": "What We Do page content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "Our Work"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "What We Do"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "service.service-detail",
+      "required": true,
+      "min": 1
+    },
+    "cta_section_title": {
+      "type": "text",
+      "maxLength": 200
+    },
+    "cta_section_description": {
+      "type": "text",
+      "maxLength": 500
+    }
+  }
+}

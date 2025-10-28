@@ -1,0 +1,51 @@
+{
+  "kind": "singleType",
+  "collectionName": "ticker_contents",
+  "info": {
+    "singularName": "ticker-content",
+    "pluralName": "ticker-contents",
+    "displayName": "Ticker Content",
+    "description": "News ticker/announcement bar configuration and messages"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "isEnabled": {
+      "type": "boolean",
+      "default": true
+    },
+    "messages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ticker-message",
+      "required": false
+    },
+    "animationSpeed": {
+      "type": "enumeration",
+      "enum": ["slow", "medium", "fast"],
+      "default": "medium"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "default": "#003366"
+    },
+    "textColor": {
+      "type": "string",
+      "default": "#ffffff"
+    },
+    "pauseOnHover": {
+      "type": "boolean",
+      "default": true
+    },
+    "showIcon": {
+      "type": "boolean",
+      "default": true
+    },
+    "iconName": {
+      "type": "string",
+      "default": "fa-bullhorn"
+    }
+  }
+}

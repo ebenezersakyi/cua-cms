@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_about_pages_affiliations",
+  "info": {
+    "displayName": "Affiliation",
+    "description": "International affiliation",
+    "icon": "world"
+  },
+  "options": {},
+  "attributes": {
+    "acronym": {
+      "type": "string",
+      "required": true
+    },
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "color_scheme": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true,
+      "default": "#3b82f6",
+      "options": {
+        "format": "hex"
+      }
+    }
+  }
+}

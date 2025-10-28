@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_facility_items",
+  "info": {
+    "displayName": "Facility Item",
+    "description": "Individual facility or amenity",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-building"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

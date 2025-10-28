@@ -1,0 +1,75 @@
+{
+  "kind": "singleType",
+  "collectionName": "partners_pages",
+  "info": {
+    "singularName": "partners-page",
+    "pluralName": "partners-pages",
+    "displayName": "About: Partners",
+    "description": "Content for Partners page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "About CUA Ghana"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Partners"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.partner",
+      "required": true
+    },
+    "impact_title": {
+      "type": "string",
+      "required": true,
+      "default": "Partnership Impact"
+    },
+    "impact_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "stat_strategic_partners": {
+      "type": "string",
+      "required": true,
+      "default": "8+"
+    },
+    "stat_credit_unions_supported": {
+      "type": "string",
+      "required": true,
+      "default": "500+"
+    },
+    "stat_members_benefited": {
+      "type": "string",
+      "required": true,
+      "default": "2M+"
+    },
+    "stat_countries_reached": {
+      "type": "string",
+      "required": true,
+      "default": "15+"
+    }
+  }
+}

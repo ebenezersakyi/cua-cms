@@ -11,6 +11,9 @@ module.exports = ({ env }) => ({
       },
     },
   },
+  'color-picker': {
+    enabled: true,
+  },
   // Email configuration disabled for development
   // Install @strapi/provider-email-nodemailer for production
   // email: {

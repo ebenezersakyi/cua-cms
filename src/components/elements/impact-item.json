@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_impact_items",
+  "info": {
+    "displayName": "Impact Item",
+    "description": "Individual impact story or statistic",
+    "icon": "chartLine"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-chart-line"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

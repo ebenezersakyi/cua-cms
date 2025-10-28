@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "training_calendar_pages",
+  "info": {
+    "singularName": "training-calendar-page",
+    "pluralName": "training-calendar-pages",
+    "displayName": "Training: Calendar Page",
+    "description": "Training calendar page displaying upcoming programs and schedule"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "calendarIntro": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "downloadCta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

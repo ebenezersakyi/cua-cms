@@ -1,0 +1,155 @@
+{
+  "kind": "singleType",
+  "collectionName": "role_in_ghana_pages",
+  "info": {
+    "singularName": "role-in-ghana-page",
+    "pluralName": "role-in-ghana-pages",
+    "displayName": "About: Role in Ghana",
+    "description": "Content for Role in Ghana page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "About CUA Ghana"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Role in Ghana"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "core_roles_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Core Responsibilities"
+    },
+    "core_roles_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "core_roles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.core-role-item",
+      "required": true,
+      "min": 4
+    },
+    "regulatory_title": {
+      "type": "string",
+      "required": true,
+      "default": "Regulatory Authority"
+    },
+    "regulatory_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "stat_credit_unions_supervised": {
+      "type": "string",
+      "required": true,
+      "default": "500+"
+    },
+    "stat_members_protected": {
+      "type": "string",
+      "required": true,
+      "default": "2M+"
+    },
+    "stat_years_of_oversight": {
+      "type": "string",
+      "required": true,
+      "default": "68+"
+    },
+    "services_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Essential Services"
+    },
+    "services_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.service-item",
+      "required": true,
+      "min": 4
+    },
+    "partnerships_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Strategic Partnerships"
+    },
+    "partnerships_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "partnerships": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.partnership-item",
+      "required": true,
+      "min": 3
+    },
+    "impact_title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Commitment to Ghana"
+    },
+    "impact_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "impact_highlight_1_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "impact_highlight_1_subtitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "impact_highlight_2_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "impact_highlight_2_subtitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "impact_highlight_3_title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "impact_highlight_3_subtitle": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    }
+  }
+}

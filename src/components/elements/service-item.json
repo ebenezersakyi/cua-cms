@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_service_items",
+  "info": {
+    "displayName": "Service Item",
+    "description": "Individual service offering",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-briefcase"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_sections_partners_logos",
+  "info": {
+    "displayName": "Partners Logos",
+    "description": "Partners logo display section",
+    "icon": "handshake"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Our Partners"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showActiveOnly": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

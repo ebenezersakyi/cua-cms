@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_about_pages_timeline_events",
+  "info": {
+    "displayName": "Timeline Event",
+    "description": "Historical timeline event",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "event_type": {
+      "type": "enumeration",
+      "enum": ["foundation", "presidential", "milestone", "standard"]
+    }
+  }
+}

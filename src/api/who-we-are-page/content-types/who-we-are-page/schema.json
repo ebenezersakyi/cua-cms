@@ -1,0 +1,121 @@
+{
+  "kind": "singleType",
+  "collectionName": "who_we_are_pages",
+  "info": {
+    "singularName": "who-we-are-page",
+    "pluralName": "who-we-are-pages",
+    "displayName": "About: Who We Are",
+    "description": "Content for Who We Are page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "About CUA Ghana"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Who We Are"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "stat_founded_year": {
+      "type": "string",
+      "required": true,
+      "default": "1955"
+    },
+    "stat_years_of_service": {
+      "type": "string",
+      "required": true,
+      "default": "68+"
+    },
+    "stat_credit_unions": {
+      "type": "string",
+      "required": true,
+      "default": "500+"
+    },
+    "stat_members_served": {
+      "type": "string",
+      "required": true,
+      "default": "2M+"
+    },
+    "presidential_quote": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "presidential_quote_author": {
+      "type": "string",
+      "required": true,
+      "default": "President Dr. Francis Kwame Nkrumah"
+    },
+    "presidential_quote_context": {
+      "type": "string",
+      "required": true,
+      "default": "To our Founding Father"
+    },
+    "presidential_quote_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "timeline_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "A Legacy of Service"
+    },
+    "timeline_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "timeline_events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.timeline-event",
+      "required": true,
+      "min": 3
+    },
+    "mission_text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "vision_text": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "core_values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.core-value",
+      "required": true
+    },
+    "affiliations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.affiliation",
+      "required": true
+    }
+  }
+}

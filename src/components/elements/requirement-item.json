@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_requirement_items",
+  "info": {
+    "displayName": "Requirement Item",
+    "description": "Individual requirement item",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-check-circle"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

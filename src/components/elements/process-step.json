@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_elements_process_steps",
+  "info": {
+    "displayName": "Process Step",
+    "description": "Individual process step",
+    "icon": "arrowRight"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-arrow-right"
+    },
+    "stepNumber": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

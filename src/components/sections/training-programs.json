@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_training_programs",
+  "info": {
+    "displayName": "Training Programs",
+    "description": "Training programs section",
+    "icon": "graduationCap"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Training Programs"
+    },
+    "description": {
+      "type": "text"
+    },
+    "programs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.program-item"
+    }
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "credit_unions_in_ghana_pages",
+  "info": {
+    "singularName": "credit-unions-in-ghana-page",
+    "pluralName": "credit-unions-in-ghana-pages",
+    "displayName": "Credit Unions in Ghana Page",
+    "description": "Page content for CU's in Ghana page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "overviewSection": {
+      "type": "component",
+      "component": "sections.overview-with-stats",
+      "required": true
+    },
+    "historySection": {
+      "type": "component",
+      "component": "sections.history-timeline",
+      "required": true
+    },
+    "mapSection": {
+      "type": "component",
+      "component": "sections.map-config",
+      "required": true
+    },
+    "categoriesSection": {
+      "type": "component",
+      "component": "sections.cu-categories",
+      "required": true
+    },
+    "impactSection": {
+      "type": "component",
+      "component": "sections.impact-grid",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

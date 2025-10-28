@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_cutrac_pages",
+  "info": {
+    "singularName": "contact-cutrac-page",
+    "pluralName": "contact-cutrac-pages",
+    "displayName": "Training: Contact CUTRAC Page",
+    "description": "Contact CUTRAC page with contact information and inquiry form"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "contactInfo": {
+      "type": "json",
+      "required": true
+    },
+    "formConfig": {
+      "type": "json",
+      "required": true
+    },
+    "mapSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.map-config",
+      "required": true
+    },
+    "quickLinks": {
+      "type": "richtext",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

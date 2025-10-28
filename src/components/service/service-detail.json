@@ -1,0 +1,61 @@
+{
+  "collectionName": "components_service_service_details",
+  "info": {
+    "displayName": "Service Detail",
+    "description": "Detailed service information with accordion support",
+    "icon": "briefcase"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "FiBookOpen"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "category": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "detailed_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 1000
+    },
+    "key_features": {
+      "type": "text",
+      "required": true
+    },
+    "color_scheme": {
+      "type": "string",
+      "required": true,
+      "default": "#3B82F6",
+      "customField": "plugin::color-picker.color"
+    },
+    "stat_1_label": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "stat_1_value": {
+      "type": "string",
+      "maxLength": 20
+    },
+    "stat_2_label": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "stat_2_value": {
+      "type": "string",
+      "maxLength": 20
+    }
+  }
+}

@@ -39,6 +39,9 @@
     "location": {
       "type": "string"
     },
+    "venue": {
+      "type": "string"
+    },
     "featuredImage": {
       "type": "media",
       "multiple": false,
@@ -73,11 +76,6 @@
     },
     "capacity": {
       "type": "integer"
-    },
-    "status": {
-      "type": "enumeration",
-      "enum": ["Upcoming", "Ongoing", "Completed", "Cancelled"],
-      "default": "Upcoming"
     },
     "relatedEvents": {
       "type": "relation",

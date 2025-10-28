@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_elements_cu_categories",
+  "info": {
+    "displayName": "CU Category",
+    "description": "Credit Union category",
+    "icon": "folder"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-folder"
+    },
+    "count": {
+      "type": "integer"
+    }
+  }
+}

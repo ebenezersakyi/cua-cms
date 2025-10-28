@@ -4,61 +4,136 @@
   "info": {
     "singularName": "chapter",
     "pluralName": "chapters",
-    "displayName": "Chapter",
-    "description": "Regional CUA chapters information"
+    "displayName": "Our Work: Chapter",
+    "description": "Regional chapter information"
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "chapterName": {
+    "name": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 100
     },
     "slug": {
       "type": "uid",
-      "targetField": "chapterName",
+      "targetField": "name",
       "required": true
     },
     "region": {
       "type": "string",
-      "required": true
+      "required": true,
+      "maxLength": 100
     },
     "description": {
-      "type": "richtext"
+      "type": "text",
+      "required": true,
+      "maxLength": 300
     },
-    "address": {
-      "type": "text"
+    "overview_text": {
+      "type": "richtext",
+      "required": true
     },
-    "phone": {
-      "type": "string"
-    },
-    "email": {
-      "type": "email"
-    },
-    "chairperson": {
-      "type": "string"
-    },
-    "secretary": {
-      "type": "string"
-    },
-    "creditUnionsCount": {
-      "type": "integer"
-    },
-    "totalMembers": {
-      "type": "integer"
-    },
-    "establishedYear": {
-      "type": "integer"
-    },
-    "coverImage": {
+    "image": {
       "type": "media",
       "multiple": false,
+      "required": false,
       "allowedTypes": ["images"]
     },
-    "activities": {
-      "type": "richtext"
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "color_scheme": {
+      "type": "enumeration",
+      "enum": [
+        "blue", "green", "purple", "orange", "red",
+        "teal", "yellow", "indigo", "pink", "cyan", "emerald"
+      ],
+      "required": true,
+      "default": "blue"
+    },
+    "societies": {
+      "type": "integer",
+      "required": true,
+      "default": 0
+    },
+    "shareholders": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "assets": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "office_address": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "office_location": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "phone_numbers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.phone-number",
+      "required": true,
+      "min": 1
+    },
+    "email_addresses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact.email-address",
+      "required": true,
+      "min": 1
+    },
+    "regional_manager_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "regional_manager_email": {
+      "type": "email"
+    },
+    "staff_strength": {
+      "type": "integer"
+    },
+    "functions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chapter.function-item",
+      "required": true,
+      "min": 1
+    },
+    "leadership": {
+      "type": "component",
+      "repeatable": true,
+      "component": "chapter.leadership-member"
+    },
+    "map_latitude": {
+      "type": "decimal",
+      "required": true,
+      "default": 5.6037
+    },
+    "map_longitude": {
+      "type": "decimal",
+      "required": true,
+      "default": -0.1870
+    },
+    "map_zoom": {
+      "type": "integer",
+      "default": 16,
+      "min": 1,
+      "max": 20
     },
     "credit_unions": {
       "type": "relation",

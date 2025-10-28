@@ -1,0 +1,41 @@
+{
+  "kind": "singleType",
+  "collectionName": "credit_unions_success_stories_pages",
+  "info": {
+    "singularName": "credit-unions-success-stories-page",
+    "pluralName": "credit-unions-success-stories-pages",
+    "displayName": "Credit Unions Success Stories Page",
+    "description": "Page content for Credit Unions - Success Stories page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "component": "sections.intro-with-stats",
+      "required": true
+    },
+    "categoriesSection": {
+      "type": "component",
+      "component": "sections.story-categories",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

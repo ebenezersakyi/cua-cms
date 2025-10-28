@@ -11,6 +11,11 @@
     "develop": "strapi develop",
     "seed:example": "node ./scripts/seed.js",
     "seed:cua": "node ./scripts/seed-cua.js",
+    "seed:about": "node ./scripts/seed-about-pages.js",
+    "cleanup:about": "node ./scripts/cleanup-about-pages.js",
+    "seed:ourwork": "node ./scripts/seed-our-work-pages.js",
+    "seed:credit-unions": "node ./scripts/seed-credit-unions-pages.js",
+    "permissions:create": "node ./scripts/create-public-permissions.js",
     "start": "strapi start",
     "strapi": "strapi",
     "upgrade": "npx @strapi/upgrade latest",
@@ -18,6 +23,7 @@
   },
   "dependencies": {
     "@strapi/plugin-cloud": "5.25.0",
+    "@strapi/plugin-color-picker": "^5.29.0",
     "@strapi/plugin-users-permissions": "5.25.0",
     "@strapi/strapi": "5.25.0",
     "better-sqlite3": "11.3.0",
@@ -28,7 +34,6 @@
     "react-router-dom": "^6.0.0",
     "styled-components": "^6.0.0"
   },
-  "devDependencies": {},
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"

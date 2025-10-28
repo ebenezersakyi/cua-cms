@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_about_pages_partnership_items",
+  "info": {
+    "displayName": "Partnership Item",
+    "description": "Strategic partnership item",
+    "icon": "handshake"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "acronym": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-globe", "fa-handshake", "fa-users", "fa-building", "fa-university",
+        "fa-landmark", "fa-globe-africa", "fa-network-wired", "fa-project-diagram", "fa-sitemap",
+        "fa-link", "fa-hands-helping", "fa-people-arrows", "fa-user-friends"
+      ],
+      "required": true,
+      "default": "fa-handshake"
+    }
+  }
+}

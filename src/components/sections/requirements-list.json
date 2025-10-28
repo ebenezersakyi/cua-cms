@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_requirements_lists",
+  "info": {
+    "displayName": "Requirements List",
+    "description": "List of requirements with icons",
+    "icon": "listCheck"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Requirements"
+    },
+    "description": {
+      "type": "text"
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.requirement-item"
+    }
+  }
+}

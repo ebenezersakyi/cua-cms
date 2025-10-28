@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_about_pages_service_items",
+  "info": {
+    "displayName": "Service Item",
+    "description": "Essential service item",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-file-alt", "fa-award", "fa-clipboard-check", "fa-graduation-cap", "fa-book",
+        "fa-certificate", "fa-handshake", "fa-users-cog", "fa-chart-bar", "fa-phone-alt",
+        "fa-comments", "fa-headset", "fa-life-ring", "fa-tools", "fa-cogs",
+        "fa-project-diagram", "fa-tasks", "fa-calendar-check", "fa-briefcase", "fa-envelope"
+      ],
+      "required": true,
+      "default": "fa-clipboard-check"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    }
+  }
+}

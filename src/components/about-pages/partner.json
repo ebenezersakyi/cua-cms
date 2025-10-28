@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_about_pages_partners",
+  "info": {
+    "displayName": "Partner",
+    "description": "Partner organization",
+    "icon": "globe"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "full_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "established": {
+      "type": "string"
+    },
+    "focus_areas": {
+      "type": "text"
+    },
+    "website": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_elements_program_items",
+  "info": {
+    "displayName": "Program Item",
+    "description": "Individual training program",
+    "icon": "graduationCap"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "duration": {
+      "type": "string"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": ["Beginner", "Intermediate", "Advanced", "All Levels"]
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-graduation-cap"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_sections_story_categories",
+  "info": {
+    "displayName": "Story Categories",
+    "description": "Success story categories section",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Stories by Category"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showAllStoriesLink": {
+      "type": "boolean",
+      "default": true
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.story-category"
+    }
+  }
+}

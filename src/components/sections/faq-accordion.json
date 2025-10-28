@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_faq_accordions",
+  "info": {
+    "displayName": "FAQ Accordion",
+    "description": "FAQ section with accordion items",
+    "icon": "question"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Frequently Asked Questions"
+    },
+    "description": {
+      "type": "text"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.faq-item"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_services_grids",
+  "info": {
+    "displayName": "Services Grid",
+    "description": "Grid of services offered",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Services"
+    },
+    "description": {
+      "type": "text"
+    },
+    "services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.service-item"
+    }
+  }
+}

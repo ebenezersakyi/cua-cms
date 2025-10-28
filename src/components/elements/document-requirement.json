@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_document_requirements",
+  "info": {
+    "displayName": "Document Requirement",
+    "description": "Individual document requirement",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-file"
+    },
+    "isRequired": {
+      "type": "boolean",
+      "default": true
+    },
+    "applicableTo": {
+      "type": "text"
+    }
+  }
+}

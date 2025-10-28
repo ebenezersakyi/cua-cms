@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_cu_categories",
+  "info": {
+    "displayName": "CU Categories",
+    "description": "Credit Union categories section",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Credit Union Categories"
+    },
+    "description": {
+      "type": "text"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.cu-category"
+    }
+  }
+}

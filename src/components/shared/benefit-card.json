@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_shared_benefit_cards",
+  "info": {
+    "displayName": "Benefit Card",
+    "description": "Benefits/Features card for join section",
+    "icon": "check"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "icon": {
+      "type": "string",
+      "default": "fa-check-circle"
+    }
+  }
+}

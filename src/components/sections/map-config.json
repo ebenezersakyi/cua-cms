@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_sections_map_configs",
+  "info": {
+    "displayName": "Map Config",
+    "description": "Interactive map configuration",
+    "icon": "map"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Find Credit Unions"
+    },
+    "description": {
+      "type": "text"
+    },
+    "defaultZoom": {
+      "type": "integer",
+      "default": 7
+    },
+    "centerLatitude": {
+      "type": "decimal",
+      "default": 7.9465
+    },
+    "centerLongitude": {
+      "type": "decimal",
+      "default": -1.0232
+    },
+    "enableClustering": {
+      "type": "boolean",
+      "default": true
+    },
+    "showFilters": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

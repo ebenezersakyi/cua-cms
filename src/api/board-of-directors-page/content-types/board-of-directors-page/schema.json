@@ -1,0 +1,54 @@
+{
+  "kind": "singleType",
+  "collectionName": "board_of_directors_pages",
+  "info": {
+    "singularName": "board-of-directors-page",
+    "pluralName": "board-of-directors-pages",
+    "displayName": "About: Board of Directors",
+    "description": "Content for Board of Directors page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "Leadership"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Board of Directors"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "board_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Experienced Leadership"
+    },
+    "board_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "board_members": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::board-member.board-member"
+    }
+  }
+}

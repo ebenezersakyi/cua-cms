@@ -1,0 +1,45 @@
+{
+  "collectionName": "components_sections_hero_with_ctas",
+  "info": {
+    "displayName": "Hero with CTA",
+    "description": "Hero section with title, subtitle, description, background image, and CTA button",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false
+    },
+    "description": {
+      "type": "text",
+      "required": false
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "ctaText": {
+      "type": "string",
+      "required": false
+    },
+    "ctaLink": {
+      "type": "string",
+      "required": false
+    },
+    "secondaryCtaText": {
+      "type": "string",
+      "required": false
+    },
+    "secondaryCtaLink": {
+      "type": "string",
+      "required": false
+    }
+  }
+}

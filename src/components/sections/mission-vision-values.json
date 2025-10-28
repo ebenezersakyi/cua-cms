@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_sections_mission_vision_values",
+  "info": {
+    "displayName": "Mission Vision Values",
+    "description": "Mission, vision, and values section",
+    "icon": "target"
+  },
+  "options": {},
+  "attributes": {
+    "missionTitle": {
+      "type": "string",
+      "default": "Our Mission"
+    },
+    "missionStatement": {
+      "type": "richtext"
+    },
+    "visionTitle": {
+      "type": "string",
+      "default": "Our Vision"
+    },
+    "visionStatement": {
+      "type": "richtext"
+    },
+    "valuesTitle": {
+      "type": "string",
+      "default": "Our Values"
+    },
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.core-value"
+    }
+  }
+}

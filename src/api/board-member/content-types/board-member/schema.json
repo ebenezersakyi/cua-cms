@@ -4,7 +4,7 @@
   "info": {
     "singularName": "board-member",
     "pluralName": "board-members",
-    "displayName": "Board Member",
+    "displayName": "About: Board Member",
     "description": "Board of Directors information"
   },
   "options": {
@@ -27,8 +27,10 @@
     "photo": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": ["images"]
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "qualifications": {
       "type": "richtext"

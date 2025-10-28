@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_chapter_function_items",
+  "info": {
+    "displayName": "Function Item",
+    "description": "Chapter function or responsibility",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    }
+  }
+}

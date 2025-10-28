@@ -1,0 +1,131 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_page_contents",
+  "info": {
+    "singularName": "about-page-content",
+    "pluralName": "about-page-contents",
+    "displayName": "About Page Content",
+    "description": "Content for About Us page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "default": "About CUA Ghana"
+    },
+    "heroSubtitle": {
+      "type": "text",
+      "default": "Empowering Communities Through Cooperative Finance"
+    },
+    "heroImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "whoWeAreTitle": {
+      "type": "string",
+      "default": "Who We Are"
+    },
+    "whoWeAreContent": {
+      "type": "richtext",
+      "required": false
+    },
+    "historyTitle": {
+      "type": "string",
+      "default": "Our History"
+    },
+    "historyContent": {
+      "type": "richtext"
+    },
+    "establishedYear": {
+      "type": "integer",
+      "default": 1968
+    },
+    "missionTitle": {
+      "type": "string",
+      "default": "Our Mission"
+    },
+    "missionStatement": {
+      "type": "richtext",
+      "required": false
+    },
+    "visionTitle": {
+      "type": "string",
+      "default": "Our Vision"
+    },
+    "visionStatement": {
+      "type": "richtext",
+      "required": false
+    },
+    "valuesTitle": {
+      "type": "string",
+      "default": "Our Core Values"
+    },
+    "valuesDescription": {
+      "type": "text"
+    },
+    "coreValues": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.core-value",
+      "max": 8
+    },
+    "roleInGhanaTitle": {
+      "type": "string",
+      "default": "Our Role in Ghana"
+    },
+    "roleInGhanaContent": {
+      "type": "richtext"
+    },
+    "potentialAndSizeTitle": {
+      "type": "string",
+      "default": "Potential & Size"
+    },
+    "potentialAndSizeContent": {
+      "type": "richtext"
+    },
+    "totalCreditUnions": {
+      "type": "integer"
+    },
+    "totalMembers": {
+      "type": "integer"
+    },
+    "totalAssets": {
+      "type": "string"
+    },
+    "ctaTitle": {
+      "type": "string",
+      "default": "Join the Movement"
+    },
+    "ctaDescription": {
+      "type": "text"
+    },
+    "ctaPrimaryText": {
+      "type": "string",
+      "default": "Become a Member"
+    },
+    "ctaPrimaryLink": {
+      "type": "string",
+      "default": "/credit-unions/join"
+    },
+    "ctaSecondaryText": {
+      "type": "string",
+      "default": "Find Credit Unions"
+    },
+    "ctaSecondaryLink": {
+      "type": "string",
+      "default": "/credit-unions"
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}

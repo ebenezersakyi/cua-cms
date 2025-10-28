@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_requirements_grids",
+  "info": {
+    "displayName": "Requirements Grid",
+    "description": "Grid of requirements with examples",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Requirements"
+    },
+    "description": {
+      "type": "text"
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.requirement-card"
+    }
+  }
+}

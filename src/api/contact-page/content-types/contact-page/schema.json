@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact_pages",
+  "info": {
+    "singularName": "contact-page",
+    "pluralName": "contact-pages",
+    "displayName": "Contact Page",
+    "description": "Contact page configuration with hero, contact info, form settings, map, and quick links"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "contactInfoSection": {
+      "type": "json",
+      "required": true
+    },
+    "contactInfoCards": {
+      "type": "json",
+      "required": true
+    },
+    "contactFormSection": {
+      "type": "json",
+      "required": true
+    },
+    "mapConfiguration": {
+      "type": "json",
+      "required": true
+    },
+    "quickLinksSection": {
+      "type": "json",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

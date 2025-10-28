@@ -1,0 +1,39 @@
+{
+  "kind": "singleType",
+  "collectionName": "video_gallery_pages",
+  "info": {
+    "singularName": "video-gallery-page",
+    "pluralName": "video-gallery-pages",
+    "displayName": "Media: Video Gallery Page",
+    "description": "Video gallery page configuration with hero section and YouTube CTA"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

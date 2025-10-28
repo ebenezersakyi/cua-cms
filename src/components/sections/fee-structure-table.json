@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_sections_fee_structure_tables",
+  "info": {
+    "displayName": "Fee Structure Table",
+    "description": "Table showing fee structure",
+    "icon": "dollar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Fee Structure"
+    },
+    "description": {
+      "type": "text"
+    },
+    "feeItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.fee-item"
+    },
+    "note": {
+      "type": "text"
+    }
+  }
+}

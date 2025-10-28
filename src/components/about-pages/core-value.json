@@ -1,0 +1,36 @@
+{
+  "collectionName": "components_about_pages_core_values",
+  "info": {
+    "displayName": "Core Value",
+    "description": "Organization core value",
+    "icon": "star"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "enumeration",
+      "enum": [
+        "fa-users", "fa-handshake", "fa-shield-alt", "fa-heart", "fa-star",
+        "fa-award", "fa-bullseye", "fa-check-circle", "fa-lightbulb", "fa-balance-scale",
+        "fa-hands-helping", "fa-leaf", "fa-globe", "fa-rocket", "fa-trophy",
+        "fa-thumbs-up", "fa-crown", "fa-gem", "fa-flag", "fa-fire"
+      ],
+      "required": true,
+      "default": "fa-star"
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "color": {
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
+      "required": true,
+      "default": "#3b82f6",
+      "options": {
+        "format": "hex"
+      }
+    }
+  }
+}

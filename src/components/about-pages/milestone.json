@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_about_pages_milestones",
+  "info": {
+    "displayName": "Milestone",
+    "description": "Historical milestone",
+    "icon": "flag"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    }
+  }
+}

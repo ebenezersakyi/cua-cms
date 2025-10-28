@@ -1,0 +1,107 @@
+
+> cua-cms@0.1.0 develop
+> strapi develop
+
+- Loading Strapi
+[2025-10-18 08:20:31.445] [33mwarn[39m: admin.auth.options.expiresIn is deprecated and will be removed in Strapi 6. Please configure admin.auth.sessions.maxRefreshTokenLifespan and admin.auth.sessions.maxSessionLifespan.
+- Building build context
+
+[INFO] Including the following ENV variables as part of the JS bundle:
+    - ADMIN_PATH
+    - STRAPI_ADMIN_BACKEND_URL
+    - STRAPI_TELEMETRY_DISABLED
+    - STRAPI_ANALYTICS_URL
+✔ Building build context (6ms)
+- Creating admin
+✔ Creating admin (153ms)
+✔ Loading Strapi (1191ms)
+- Generating types
+✔ Generating types (187ms)
+
+ Project information
+
+┌────────────────────┬──────────────────────────────────────────────────┐
+│ Time               │ Sat Oct 18 2025 08:20:31 GMT+0000 (Greenwich Me… │
+│ Launched in        │ 1384 ms                                          │
+│ Environment        │ development                                      │
+│ Process PID        │ 2724                                             │
+│ Version            │ 5.25.0 (node v22.18.0)                           │
+│ Edition            │ Community                                        │
+│ Database           │ sqlite                                           │
+│ Database name      │ .tmp/data.db                                     │
+└────────────────────┴──────────────────────────────────────────────────┘
+
+ Actions available
+
+Welcome back!
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2025-10-18 08:20:31.932] [32minfo[39m: Strapi started successfully
+[2025-10-18 08:20:53.814] [32mhttp[39m: GET /admin/content-manager/collection-types/api::hero-slide.hero-slide?page=1&pageSize=10&sort=title%3AASC (36 ms) 200
+[2025-10-18 08:20:55.896] [32mhttp[39m: GET /admin/content-manager/collection-types/api::hero-slide.hero-slide?page=1&pageSize=10&sort=title%3AASC (3 ms) 200
+[2025-10-18 08:20:56.011] [32mhttp[39m: GET /admin/project-type (3 ms) 200
+[2025-10-18 08:20:56.038] [32mhttp[39m: GET /admin/init (3 ms) 200
+[2025-10-18 08:20:56.057] [32mhttp[39m: GET /admin/users/me (18 ms) 200
+[2025-10-18 08:20:56.071] [32mhttp[39m: GET /admin/users/me/permissions (30 ms) 200
+[2025-10-18 08:20:56.089] [32mhttp[39m: GET /admin/telemetry-properties (9 ms) 200
+[2025-10-18 08:20:56.090] [32mhttp[39m: GET /admin/information (19 ms) 200
+[2025-10-18 08:20:56.114] [32mhttp[39m: GET /admin/guided-tour-meta (13 ms) 200
+[2025-10-18 08:20:56.127] [32mhttp[39m: GET /content-manager/init (10 ms) 200
+[2025-10-18 08:20:56.146] [32mhttp[39m: GET /content-manager/content-types-settings (18 ms) 200
+[2025-10-18 08:20:56.148] [32mhttp[39m: GET /admin/license-limit-information (33 ms) 200
+[2025-10-18 08:20:56.197] [32mhttp[39m: GET /content-manager/content-types/api::hero-slide.hero-slide/configuration (9 ms) 200
+[2025-10-18 08:20:56.220] [32mhttp[39m: GET /content-manager/collection-types/api::hero-slide.hero-slide?page=1&pageSize=10&sort=title%3AASC (22 ms) 200
+[2025-10-18 08:20:56.261] [32mhttp[39m: GET /i18n/locales (15 ms) 200
+[2025-10-18 08:21:19.243] [32mhttp[39m: GET /api/hero-slides (14 ms) 200
+[2025-10-18 08:21:42.716] [32mhttp[39m: GET /api/hero-slide (3 ms) 404
+[2025-10-18 08:21:43.356] [32mhttp[39m: GET /api/hero-slide (2 ms) 404
+[2025-10-18 08:21:43.701] [32mhttp[39m: GET /api/hero-slide (2 ms) 404
+[2025-10-18 08:21:43.849] [32mhttp[39m: GET /api/hero-slide (1 ms) 404
+[2025-10-18 08:21:44.000] [32mhttp[39m: GET /api/hero-slide (3 ms) 404
+[2025-10-18 08:21:44.121] [32mhttp[39m: GET /api/hero-slide (1 ms) 404
+[2025-10-18 08:22:09.597] [32mhttp[39m: GET /api/hero-slides (7 ms) 200
+[2025-10-18 08:22:38.730] [32mhttp[39m: GET /api/hero-slides (6 ms) 200
+[2025-10-18 08:22:58.448] [32mhttp[39m: GET /api/hero-slides (5 ms) 200
+[2025-10-18 08:23:01.286] [32mhttp[39m: GET /api/hero-slide (2 ms) 404
+[2025-10-18 08:23:02.075] [32mhttp[39m: GET /api/hero-slide (1 ms) 404
+[2025-10-18 08:24:01.659] [32minfo[39m: File changed: /Users/ebenezersakyi/Documents/projects/consulting/cua-website/cua-cms/config/middlewares.js
+[2025-10-18 08:24:01.782] [32minfo[39m: Shutting down Strapi
+[2025-10-18 08:24:01.786] [32minfo[39m: Strapi has been shut down
+- Loading Strapi
+[2025-10-18 08:24:03.485] [33mwarn[39m: The strapi::cors middleware no longer supports the `enabled` option. Using it to conditionally enable CORS might cause an insecure default. To disable strapi::cors, remove it from the exported array in config/middleware.js
+[2025-10-18 08:24:03.962] [33mwarn[39m: admin.auth.options.expiresIn is deprecated and will be removed in Strapi 6. Please configure admin.auth.sessions.maxRefreshTokenLifespan and admin.auth.sessions.maxSessionLifespan.
+- Building build context
+
+[INFO] Including the following ENV variables as part of the JS bundle:
+    - ADMIN_PATH
+    - STRAPI_ADMIN_BACKEND_URL
+    - STRAPI_TELEMETRY_DISABLED
+    - STRAPI_ANALYTICS_URL
+✔ Building build context (6ms)
+- Creating admin
+✔ Creating admin (150ms)
+✔ Loading Strapi (1169ms)
+- Generating types
+✔ Generating types (186ms)
+
+ Project information
+
+┌────────────────────┬──────────────────────────────────────────────────┐
+│ Time               │ Sat Oct 18 2025 08:24:04 GMT+0000 (Greenwich Me… │
+│ Launched in        │ 1358 ms                                          │
+│ Environment        │ development                                      │
+│ Process PID        │ 4346                                             │
+│ Version            │ 5.25.0 (node v22.18.0)                           │
+│ Edition            │ Community                                        │
+│ Database           │ sqlite                                           │
+│ Database name      │ .tmp/data.db                                     │
+└────────────────────┴──────────────────────────────────────────────────┘
+
+ Actions available
+
+Welcome back!
+To access the server ⚡️, go to:
+http://localhost:1337
+
+[2025-10-18 08:24:04.442] [32minfo[39m: Strapi started successfully

@@ -1,0 +1,56 @@
+{
+  "kind": "singleType",
+  "collectionName": "credit_unions_overview_pages",
+  "info": {
+    "singularName": "credit-unions-overview-page",
+    "pluralName": "credit-unions-overview-pages",
+    "displayName": "Credit Unions: Overview Page",
+    "description": "Main landing page for Credit Unions section"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-with-cta",
+      "required": true
+    },
+    "keyBenefitsSection": {
+      "type": "component",
+      "component": "sections.icon-benefits-grid",
+      "required": true
+    },
+    "aboutSection": {
+      "type": "component",
+      "component": "sections.overview-with-stats",
+      "required": true
+    },
+    "howItWorksSection": {
+      "type": "component",
+      "component": "sections.numbered-steps",
+      "required": true
+    },
+    "toolsSection": {
+      "type": "component",
+      "component": "sections.support-services",
+      "required": false
+    },
+    "loanCalculatorSection": {
+      "type": "component",
+      "component": "sections.intro-with-stats",
+      "required": false
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

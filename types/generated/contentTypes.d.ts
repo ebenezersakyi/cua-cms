@@ -430,6 +430,89 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiAboutPageContentAboutPageContent
+  extends Struct.SingleTypeSchema {
+  collectionName: 'about_page_contents';
+  info: {
+    description: 'Content for About Us page';
+    displayName: 'About Page Content';
+    pluralName: 'about-page-contents';
+    singularName: 'about-page-content';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    coreValues: Schema.Attribute.Component<'shared.core-value', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 8;
+        },
+        number
+      >;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaDescription: Schema.Attribute.Text;
+    ctaPrimaryLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/credit-unions/join'>;
+    ctaPrimaryText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Become a Member'>;
+    ctaSecondaryLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/credit-unions'>;
+    ctaSecondaryText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Find Credit Unions'>;
+    ctaTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Join the Movement'>;
+    establishedYear: Schema.Attribute.Integer &
+      Schema.Attribute.DefaultTo<1968>;
+    heroImage: Schema.Attribute.Media<'images'>;
+    heroSubtitle: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Empowering Communities Through Cooperative Finance'>;
+    heroTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'About CUA Ghana'>;
+    historyContent: Schema.Attribute.RichText;
+    historyTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our History'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::about-page-content.about-page-content'
+    > &
+      Schema.Attribute.Private;
+    missionStatement: Schema.Attribute.RichText;
+    missionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Mission'>;
+    potentialAndSizeContent: Schema.Attribute.RichText;
+    potentialAndSizeTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Potential & Size'>;
+    publishedAt: Schema.Attribute.DateTime;
+    roleInGhanaContent: Schema.Attribute.RichText;
+    roleInGhanaTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Role in Ghana'>;
+    seoDescription: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 160;
+      }>;
+    seoTitle: Schema.Attribute.String;
+    totalAssets: Schema.Attribute.String;
+    totalCreditUnions: Schema.Attribute.Integer;
+    totalMembers: Schema.Attribute.Integer;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    valuesDescription: Schema.Attribute.Text;
+    valuesTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Core Values'>;
+    visionStatement: Schema.Attribute.RichText;
+    visionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Vision'>;
+    whoWeAreContent: Schema.Attribute.RichText;
+    whoWeAreTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Who We Are'>;
+  };
+}
+
 export interface ApiAuthorAuthor extends Struct.CollectionTypeSchema {
   collectionName: 'authors';
   info: {
@@ -659,6 +742,170 @@ export interface ApiCreditUnionCreditUnion extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiCreditUnionsJoinPageCreditUnionsJoinPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'credit_unions_join_pages';
+  info: {
+    description: 'Page content for Join a Credit Union page';
+    displayName: 'Credit Unions Join Page';
+    pluralName: 'credit-unions-join-pages';
+    singularName: 'credit-unions-join-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaSection: Schema.Attribute.Component<'sections.dual-cta', false> &
+      Schema.Attribute.Required;
+    documentationSection: Schema.Attribute.Component<
+      'sections.documentation-requirements',
+      false
+    > &
+      Schema.Attribute.Required;
+    eligibilitySection: Schema.Attribute.Component<
+      'sections.eligibility-types',
+      false
+    > &
+      Schema.Attribute.Required;
+    faqSection: Schema.Attribute.Component<'sections.faq-accordion', false> &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<'sections.hero-with-cta', false> &
+      Schema.Attribute.Required;
+    howToJoinSection: Schema.Attribute.Component<
+      'sections.detailed-steps',
+      false
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::credit-unions-join-page.credit-unions-join-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    whyJoinSection: Schema.Attribute.Component<
+      'sections.icon-benefits-grid',
+      false
+    > &
+      Schema.Attribute.Required;
+  };
+}
+
+export interface ApiCreditUnionsMembersPageCreditUnionsMembersPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'credit_unions_members_pages';
+  info: {
+    description: 'Page content for Credit Unions - Members page';
+    displayName: 'Credit Unions Members Page';
+    pluralName: 'credit-unions-members-pages';
+    singularName: 'credit-unions-members-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    benefitsSection: Schema.Attribute.Component<
+      'sections.icon-benefits-grid',
+      false
+    > &
+      Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaSection: Schema.Attribute.Component<'sections.dual-cta', false> &
+      Schema.Attribute.Required;
+    feesSection: Schema.Attribute.Component<
+      'sections.fee-structure-table',
+      false
+    > &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<'sections.hero-with-cta', false> &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::credit-unions-members-page.credit-unions-members-page'
+    > &
+      Schema.Attribute.Private;
+    membershipTypesSection: Schema.Attribute.Component<
+      'sections.membership-types',
+      false
+    > &
+      Schema.Attribute.Required;
+    processSection: Schema.Attribute.Component<
+      'sections.numbered-steps',
+      false
+    > &
+      Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    requirementsSection: Schema.Attribute.Component<
+      'sections.requirements-list',
+      false
+    > &
+      Schema.Attribute.Required;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    testimonialsSection: Schema.Attribute.Component<
+      'sections.member-testimonials',
+      false
+    > &
+      Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiCreditUnionsSuccessStoriesPageCreditUnionsSuccessStoriesPage
+  extends Struct.SingleTypeSchema {
+  collectionName: 'credit_unions_success_stories_pages';
+  info: {
+    description: 'Page content for Credit Unions - Success Stories page';
+    displayName: 'Credit Unions Success Stories Page';
+    pluralName: 'credit-unions-success-stories-pages';
+    singularName: 'credit-unions-success-stories-page';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    categoriesSection: Schema.Attribute.Component<
+      'sections.story-categories',
+      false
+    > &
+      Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    ctaSection: Schema.Attribute.Component<'sections.dual-cta', false> &
+      Schema.Attribute.Required;
+    heroSection: Schema.Attribute.Component<'sections.hero-simple', false> &
+      Schema.Attribute.Required;
+    introSection: Schema.Attribute.Component<
+      'sections.intro-with-stats',
+      false
+    > &
+      Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::credit-unions-success-stories-page.credit-unions-success-stories-page'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    seo: Schema.Attribute.Component<'shared.seo', false>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiDownloadDownload extends Struct.CollectionTypeSchema {
   collectionName: 'downloads';
   info: {
@@ -794,6 +1041,90 @@ export interface ApiHeroSlideHeroSlide extends Struct.CollectionTypeSchema {
     publishedAt: Schema.Attribute.DateTime;
     subtext: Schema.Attribute.Text & Schema.Attribute.Required;
     title: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHomepageSettingHomepageSetting
+  extends Struct.SingleTypeSchema {
+  collectionName: 'homepage_settings';
+  info: {
+    description: 'Homepage-specific content and configuration';
+    displayName: 'Homepage Settings';
+    pluralName: 'homepage-settings';
+    singularName: 'homepage-setting';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    aboutCtaLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/about-us'>;
+    aboutCtaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Learn More'>;
+    aboutSectionContent: Schema.Attribute.RichText;
+    aboutSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'About CUA Ghana'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    eventsCtaLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/events'>;
+    eventsCtaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'View All Events'>;
+    eventsSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Upcoming Events'>;
+    heroSubtitle: Schema.Attribute.Text &
+      Schema.Attribute.DefaultTo<'Empowering Communities Through Cooperative Finance'>;
+    heroTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Welcome to CUA Ghana'>;
+    impactSectionDescription: Schema.Attribute.Text;
+    impactSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Impact'>;
+    impactStats: Schema.Attribute.Component<'shared.impact-stat', true>;
+    joinBenefits: Schema.Attribute.Component<'shared.benefit-card', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 6;
+        },
+        number
+      >;
+    joinCtaLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/credit-unions/join'>;
+    joinCtaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Become a Member'>;
+    joinSecondaryCtaLink: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'/credit-unions'>;
+    joinSecondaryCtaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Find Credit Unions'>;
+    joinSectionDescription: Schema.Attribute.RichText;
+    joinSectionSubtitle: Schema.Attribute.Text;
+    joinSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Join the Movement'>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::homepage-setting.homepage-setting'
+    > &
+      Schema.Attribute.Private;
+    newsCtaLink: Schema.Attribute.String & Schema.Attribute.DefaultTo<'/news'>;
+    newsCtaText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'View All News'>;
+    newsSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Latest News & Updates'>;
+    partnersSectionDescription: Schema.Attribute.Text;
+    partnersSectionTitle: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Our Partners'>;
+    publishedAt: Schema.Attribute.DateTime;
+    seoDescription: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 160;
+      }>;
+    seoTitle: Schema.Attribute.String;
+    showPartnersSection: Schema.Attribute.Boolean &
+      Schema.Attribute.DefaultTo<true>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1049,6 +1380,70 @@ export interface ApiPhotoGalleryPhotoGallery
   };
 }
 
+export interface ApiSiteSettingSiteSetting extends Struct.SingleTypeSchema {
+  collectionName: 'site_settings';
+  info: {
+    description: 'Global site configuration and settings';
+    displayName: 'Site Settings';
+    pluralName: 'site-settings';
+    singularName: 'site-setting';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    address: Schema.Attribute.Text & Schema.Attribute.Required;
+    city: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Accra'>;
+    contactEmail: Schema.Attribute.Email & Schema.Attribute.Required;
+    contactPhone: Schema.Attribute.String & Schema.Attribute.Required;
+    contactPhoneSecondary: Schema.Attribute.String;
+    copyrightText: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'\u00A9 2025 Credit Union Association Ghana. All rights reserved.'>;
+    country: Schema.Attribute.String & Schema.Attribute.DefaultTo<'Ghana'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    favicon: Schema.Attribute.Media<'images'>;
+    footerAbout: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 500;
+      }>;
+    footerColumns: Schema.Attribute.Component<'shared.footer-column', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 4;
+        },
+        number
+      >;
+    gaTrackingId: Schema.Attribute.String & Schema.Attribute.Private;
+    gtmId: Schema.Attribute.String & Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::site-setting.site-setting'
+    > &
+      Schema.Attribute.Private;
+    logo: Schema.Attribute.Media<'images'>;
+    metaDescription: Schema.Attribute.Text &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 160;
+      }>;
+    metaKeywords: Schema.Attribute.Text;
+    metaTitle: Schema.Attribute.String;
+    poBox: Schema.Attribute.String;
+    publishedAt: Schema.Attribute.DateTime;
+    siteName: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.DefaultTo<'CUA Ghana'>;
+    socialLinks: Schema.Attribute.Component<'shared.social-link', true>;
+    tagline: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'Empowering Communities Through Cooperation'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiSuccessStorySuccessStory
   extends Struct.CollectionTypeSchema {
   collectionName: 'success_stories';
@@ -1124,6 +1519,45 @@ export interface ApiTagTag extends Struct.CollectionTypeSchema {
     >;
     publishedAt: Schema.Attribute.DateTime;
     slug: Schema.Attribute.UID<'name'>;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiTickerContentTickerContent extends Struct.SingleTypeSchema {
+  collectionName: 'ticker_contents';
+  info: {
+    description: 'News ticker/announcement bar configuration and messages';
+    displayName: 'Ticker Content';
+    pluralName: 'ticker-contents';
+    singularName: 'ticker-content';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    animationSpeed: Schema.Attribute.Enumeration<['slow', 'medium', 'fast']> &
+      Schema.Attribute.DefaultTo<'medium'>;
+    backgroundColor: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'#003366'>;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    iconName: Schema.Attribute.String &
+      Schema.Attribute.DefaultTo<'fa-bullhorn'>;
+    isEnabled: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::ticker-content.ticker-content'
+    > &
+      Schema.Attribute.Private;
+    messages: Schema.Attribute.Component<'shared.ticker-message', true>;
+    pauseOnHover: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    publishedAt: Schema.Attribute.DateTime;
+    showIcon: Schema.Attribute.Boolean & Schema.Attribute.DefaultTo<true>;
+    textColor: Schema.Attribute.String & Schema.Attribute.DefaultTo<'#ffffff'>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -1782,22 +2216,29 @@ declare module '@strapi/strapi' {
       'admin::transfer-token': AdminTransferToken;
       'admin::transfer-token-permission': AdminTransferTokenPermission;
       'admin::user': AdminUser;
+      'api::about-page-content.about-page-content': ApiAboutPageContentAboutPageContent;
       'api::author.author': ApiAuthorAuthor;
       'api::board-member.board-member': ApiBoardMemberBoardMember;
       'api::chapter.chapter': ApiChapterChapter;
       'api::contact-message.contact-message': ApiContactMessageContactMessage;
       'api::credit-union.credit-union': ApiCreditUnionCreditUnion;
+      'api::credit-unions-join-page.credit-unions-join-page': ApiCreditUnionsJoinPageCreditUnionsJoinPage;
+      'api::credit-unions-members-page.credit-unions-members-page': ApiCreditUnionsMembersPageCreditUnionsMembersPage;
+      'api::credit-unions-success-stories-page.credit-unions-success-stories-page': ApiCreditUnionsSuccessStoriesPageCreditUnionsSuccessStoriesPage;
       'api::download.download': ApiDownloadDownload;
       'api::event.event': ApiEventEvent;
       'api::hero-slide.hero-slide': ApiHeroSlideHeroSlide;
+      'api::homepage-setting.homepage-setting': ApiHomepageSettingHomepageSetting;
       'api::management-team.management-team': ApiManagementTeamManagementTeam;
       'api::news-article.news-article': ApiNewsArticleNewsArticle;
       'api::news-category.news-category': ApiNewsCategoryNewsCategory;
       'api::newsletter-subscription.newsletter-subscription': ApiNewsletterSubscriptionNewsletterSubscription;
       'api::partner.partner': ApiPartnerPartner;
       'api::photo-gallery.photo-gallery': ApiPhotoGalleryPhotoGallery;
+      'api::site-setting.site-setting': ApiSiteSettingSiteSetting;
       'api::success-story.success-story': ApiSuccessStorySuccessStory;
       'api::tag.tag': ApiTagTag;
+      'api::ticker-content.ticker-content': ApiTickerContentTickerContent;
       'api::training-course.training-course': ApiTrainingCourseTrainingCourse;
       'api::training-schedule.training-schedule': ApiTrainingScheduleTrainingSchedule;
       'api::video-gallery.video-gallery': ApiVideoGalleryVideoGallery;

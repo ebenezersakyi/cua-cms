@@ -1,0 +1,77 @@
+{
+  "kind": "singleType",
+  "collectionName": "our_chapters_pages",
+  "info": {
+    "singularName": "our-chapters-page",
+    "pluralName": "our-chapters-pages",
+    "displayName": "Our Work: Our Chapters",
+    "description": "Our Chapters page content"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "Our Work"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Chapters"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "overview_stat_1_value": {
+      "type": "string",
+      "required": true,
+      "default": "11"
+    },
+    "overview_stat_1_label": {
+      "type": "string",
+      "required": true,
+      "default": "Regional Chapters"
+    },
+    "overview_stat_2_value": {
+      "type": "string",
+      "required": true,
+      "default": "500+"
+    },
+    "overview_stat_2_label": {
+      "type": "string",
+      "required": true,
+      "default": "Credit Unions"
+    },
+    "overview_stat_3_value": {
+      "type": "string",
+      "required": true,
+      "default": "400K+"
+    },
+    "overview_stat_3_label": {
+      "type": "string",
+      "required": true,
+      "default": "Total Members"
+    },
+    "overview_stat_4_value": {
+      "type": "string",
+      "required": true,
+      "default": "₵2B+"
+    },
+    "overview_stat_4_label": {
+      "type": "string",
+      "required": true,
+      "default": "Combined Assets"
+    }
+  }
+}

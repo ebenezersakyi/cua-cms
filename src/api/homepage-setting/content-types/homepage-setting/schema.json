@@ -1,0 +1,126 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_settings",
+  "info": {
+    "singularName": "homepage-setting",
+    "pluralName": "homepage-settings",
+    "displayName": "Homepage Settings",
+    "description": "Homepage-specific content and configuration"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroTitle": {
+      "type": "string",
+      "default": "Welcome to CUA Ghana"
+    },
+    "heroSubtitle": {
+      "type": "text",
+      "default": "Empowering Communities Through Cooperative Finance"
+    },
+    "impactSectionTitle": {
+      "type": "string",
+      "default": "Our Impact"
+    },
+    "impactSectionDescription": {
+      "type": "text"
+    },
+    "impactStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.impact-stat",
+      "required": false
+    },
+    "aboutSectionTitle": {
+      "type": "string",
+      "default": "About CUA Ghana"
+    },
+    "aboutSectionContent": {
+      "type": "richtext"
+    },
+    "aboutCtaText": {
+      "type": "string",
+      "default": "Learn More"
+    },
+    "aboutCtaLink": {
+      "type": "string",
+      "default": "/about-us"
+    },
+    "joinSectionTitle": {
+      "type": "string",
+      "default": "Join the Movement"
+    },
+    "joinSectionSubtitle": {
+      "type": "text"
+    },
+    "joinSectionDescription": {
+      "type": "richtext"
+    },
+    "joinBenefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.benefit-card",
+      "max": 6
+    },
+    "joinCtaText": {
+      "type": "string",
+      "default": "Become a Member"
+    },
+    "joinCtaLink": {
+      "type": "string",
+      "default": "/credit-unions/join"
+    },
+    "joinSecondaryCtaText": {
+      "type": "string",
+      "default": "Find Credit Unions"
+    },
+    "joinSecondaryCtaLink": {
+      "type": "string",
+      "default": "/credit-unions"
+    },
+    "newsSectionTitle": {
+      "type": "string",
+      "default": "Latest News & Updates"
+    },
+    "newsCtaText": {
+      "type": "string",
+      "default": "View All News"
+    },
+    "newsCtaLink": {
+      "type": "string",
+      "default": "/news"
+    },
+    "eventsSectionTitle": {
+      "type": "string",
+      "default": "Upcoming Events"
+    },
+    "eventsCtaText": {
+      "type": "string",
+      "default": "View All Events"
+    },
+    "eventsCtaLink": {
+      "type": "string",
+      "default": "/events"
+    },
+    "partnersSectionTitle": {
+      "type": "string",
+      "default": "Our Partners"
+    },
+    "partnersSectionDescription": {
+      "type": "text"
+    },
+    "showPartnersSection": {
+      "type": "boolean",
+      "default": true
+    },
+    "seoTitle": {
+      "type": "string"
+    },
+    "seoDescription": {
+      "type": "text",
+      "maxLength": 160
+    }
+  }
+}

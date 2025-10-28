@@ -1,0 +1,138 @@
+{
+  "kind": "singleType",
+  "collectionName": "potential_and_size_pages",
+  "info": {
+    "singularName": "potential-and-size-page",
+    "pluralName": "potential-and-size-pages",
+    "displayName": "About: Potential & Size",
+    "description": "Content for Potential and Size page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "About CUA Ghana"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Potential & Size"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "capabilities_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Organizational Strength"
+    },
+    "capabilities_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "capabilities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.core-role-item",
+      "required": true,
+      "min": 4
+    },
+    "stats_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Scale & Reach"
+    },
+    "stats_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "key_stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.key-stat",
+      "required": true
+    },
+    "financial_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Financial Performance"
+    },
+    "financial_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "data_source": {
+      "type": "string",
+      "required": true
+    },
+    "financial_stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.financial-stat",
+      "required": true
+    },
+    "milestones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-pages.milestone",
+      "required": true
+    },
+    "leadership_title": {
+      "type": "string",
+      "required": true,
+      "default": "Market Leadership"
+    },
+    "leadership_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "leadership_highlight_1_title": {
+      "type": "string",
+      "required": true,
+      "default": "Lowest Rates"
+    },
+    "leadership_highlight_1_subtitle": {
+      "type": "string",
+      "required": true,
+      "default": "In Financial Market"
+    },
+    "leadership_highlight_2_title": {
+      "type": "string",
+      "required": true,
+      "default": "116"
+    },
+    "leadership_highlight_2_subtitle": {
+      "type": "string",
+      "required": true,
+      "default": "CUA Employees"
+    },
+    "leadership_highlight_3_title": {
+      "type": "string",
+      "required": true,
+      "default": "Nationwide"
+    },
+    "leadership_highlight_3_subtitle": {
+      "type": "string",
+      "required": true,
+      "default": "Coverage"
+    }
+  }
+}

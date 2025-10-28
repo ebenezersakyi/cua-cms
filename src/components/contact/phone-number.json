@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_contact_phone_numbers",
+  "info": {
+    "displayName": "Phone Number",
+    "description": "Contact phone number with label",
+    "icon": "phone"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50,
+      "default": "Tel"
+    },
+    "number": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    }
+  }
+}

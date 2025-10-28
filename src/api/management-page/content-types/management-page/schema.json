@@ -1,0 +1,94 @@
+{
+  "kind": "singleType",
+  "collectionName": "management_pages",
+  "info": {
+    "singularName": "management-page",
+    "pluralName": "management-pages",
+    "displayName": "About: Management",
+    "description": "Content for Management Team page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hero_badge": {
+      "type": "string",
+      "required": true,
+      "default": "Leadership"
+    },
+    "hero_title": {
+      "type": "string",
+      "required": true,
+      "default": "Management Team"
+    },
+    "hero_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "hero_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "executive_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Senior Management"
+    },
+    "executive_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "executive_team": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::management-team.management-team"
+    },
+    "department_section_title": {
+      "type": "string",
+      "required": true,
+      "default": "Heads of Departments"
+    },
+    "department_section_subtitle": {
+      "type": "text",
+      "required": true,
+      "maxLength": 300
+    },
+    "department_heads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::management-team.management-team"
+    },
+    "philosophy_title": {
+      "type": "string",
+      "required": true,
+      "default": "Leadership Excellence"
+    },
+    "philosophy_description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "stat_years_experience": {
+      "type": "string",
+      "required": true,
+      "default": "25+"
+    },
+    "stat_credit_unions_managed": {
+      "type": "string",
+      "required": true,
+      "default": "500+"
+    },
+    "stat_members_served": {
+      "type": "string",
+      "required": true,
+      "default": "2M+"
+    }
+  }
+}

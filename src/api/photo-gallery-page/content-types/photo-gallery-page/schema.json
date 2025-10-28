@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "photo_gallery_pages",
+  "info": {
+    "singularName": "photo-gallery-page",
+    "pluralName": "photo-gallery-pages",
+    "displayName": "Media: Photo Gallery Page",
+    "description": "Photo gallery page configuration with hero and intro sections"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.intro-with-video",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

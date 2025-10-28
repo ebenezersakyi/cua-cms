@@ -1,0 +1,100 @@
+{
+  "kind": "singleType",
+  "collectionName": "site_settings",
+  "info": {
+    "singularName": "site-setting",
+    "pluralName": "site-settings",
+    "displayName": "Site Settings",
+    "description": "Global site configuration and settings"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "siteName": {
+      "type": "string",
+      "required": true,
+      "default": "CUA Ghana"
+    },
+    "tagline": {
+      "type": "string",
+      "default": "Empowering Communities Through Cooperation"
+    },
+    "logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "favicon": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    },
+    "contactEmail": {
+      "type": "email",
+      "required": true
+    },
+    "contactPhone": {
+      "type": "string",
+      "required": true
+    },
+    "contactPhoneSecondary": {
+      "type": "string"
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "poBox": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string",
+      "default": "Accra"
+    },
+    "country": {
+      "type": "string",
+      "default": "Ghana"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
+    },
+    "footerAbout": {
+      "type": "text",
+      "maxLength": 500
+    },
+    "footerColumns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.footer-column",
+      "max": 4
+    },
+    "copyrightText": {
+      "type": "string",
+      "default": "© 2025 Credit Union Association Ghana. All rights reserved."
+    },
+    "gtmId": {
+      "type": "string",
+      "private": true
+    },
+    "gaTrackingId": {
+      "type": "string",
+      "private": true
+    },
+    "metaTitle": {
+      "type": "string"
+    },
+    "metaDescription": {
+      "type": "text",
+      "maxLength": 160
+    },
+    "metaKeywords": {
+      "type": "text"
+    }
+  }
+}

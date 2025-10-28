@@ -1,0 +1,66 @@
+{
+  "kind": "singleType",
+  "collectionName": "credit_unions_form_pages",
+  "info": {
+    "singularName": "credit-unions-form-page",
+    "pluralName": "credit-unions-form-pages",
+    "displayName": "Credit Unions Form Page",
+    "description": "Page content for Form a Credit Union page"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "introSection": {
+      "type": "component",
+      "component": "sections.intro-with-stats",
+      "required": true
+    },
+    "benefitsSection": {
+      "type": "component",
+      "component": "sections.icon-benefits-grid",
+      "required": true
+    },
+    "requirementsSection": {
+      "type": "component",
+      "component": "sections.requirements-grid",
+      "required": true
+    },
+    "processSection": {
+      "type": "component",
+      "component": "sections.timeline-process",
+      "required": true
+    },
+    "supportSection": {
+      "type": "component",
+      "component": "sections.support-services",
+      "required": true
+    },
+    "resourcesSection": {
+      "type": "component",
+      "component": "sections.downloadable-resources",
+      "required": true
+    },
+    "faqSection": {
+      "type": "component",
+      "component": "sections.faq-accordion",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "component": "shared.seo",
+      "required": false
+    }
+  }
+}

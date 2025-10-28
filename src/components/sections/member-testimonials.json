@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_sections_member_testimonials",
+  "info": {
+    "displayName": "Member Testimonials",
+    "description": "Member testimonials section configuration",
+    "icon": "quote"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "What Our Members Say"
+    },
+    "description": {
+      "type": "text"
+    },
+    "showFeaturedOnly": {
+      "type": "boolean",
+      "default": true
+    },
+    "displayLimit": {
+      "type": "integer",
+      "default": 3,
+      "min": 1,
+      "max": 12
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_membership_types",
+  "info": {
+    "displayName": "Membership Types",
+    "description": "Different types of membership offered",
+    "icon": "users"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Membership Types"
+    },
+    "description": {
+      "type": "text"
+    },
+    "types": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.membership-type"
+    }
+  }
+}

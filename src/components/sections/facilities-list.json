@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_facilities_lists",
+  "info": {
+    "displayName": "Facilities List",
+    "description": "List of facilities and amenities",
+    "icon": "building"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Our Facilities"
+    },
+    "description": {
+      "type": "text"
+    },
+    "facilities": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.facility-item"
+    }
+  }
+}

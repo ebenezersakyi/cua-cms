@@ -4,7 +4,7 @@
   "info": {
     "singularName": "management-team",
     "pluralName": "management-teams",
-    "displayName": "Management Team",
+    "displayName": "About: Management Team",
     "description": "Management staff information"
   },
   "options": {
@@ -22,7 +22,15 @@
     },
     "department": {
       "type": "enumeration",
-      "enum": ["Executive", "Finance", "Operations", "Training", "IT", "Marketing", "HR"]
+      "enum": [
+        "Executive",
+        "Finance",
+        "Operations",
+        "Training",
+        "IT",
+        "Marketing",
+        "HR"
+      ]
     },
     "bio": {
       "type": "richtext",
@@ -31,8 +39,10 @@
     "photo": {
       "type": "media",
       "multiple": false,
-      "required": true,
-      "allowedTypes": ["images"]
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
     },
     "email": {
       "type": "email"

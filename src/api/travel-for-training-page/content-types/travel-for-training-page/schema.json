@@ -1,0 +1,49 @@
+{
+  "kind": "singleType",
+  "collectionName": "travel_for_training_pages",
+  "info": {
+    "singularName": "travel-for-training-page",
+    "pluralName": "travel-for-training-pages",
+    "displayName": "Training: Travel for Training Page",
+    "description": "Travel and accommodation information for training participants"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "locations": {
+      "type": "json",
+      "required": true
+    },
+    "amenities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.icon-benefits-grid",
+      "required": true
+    },
+    "travelTips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.numbered-steps",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.dual-cta",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

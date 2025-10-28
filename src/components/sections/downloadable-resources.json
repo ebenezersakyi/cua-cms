@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_downloadable_resources",
+  "info": {
+    "displayName": "Downloadable Resources",
+    "description": "Section with downloadable resources",
+    "icon": "download"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Resources & Downloads"
+    },
+    "description": {
+      "type": "text"
+    },
+    "resources": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.resource-item"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_documentation_requirements",
+  "info": {
+    "displayName": "Documentation Requirements",
+    "description": "Required documentation section",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Required Documents"
+    },
+    "description": {
+      "type": "text"
+    },
+    "documents": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.document-requirement"
+    }
+  }
+}

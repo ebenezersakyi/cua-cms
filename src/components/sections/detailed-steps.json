@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_sections_detailed_steps",
+  "info": {
+    "displayName": "Detailed Steps",
+    "description": "Steps section with detailed lists",
+    "icon": "listOl"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "subtitle": {
+      "type": "string",
+      "required": false
+    },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.detailed-step"
+    }
+  }
+}

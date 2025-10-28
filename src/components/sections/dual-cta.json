@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_sections_dual_ctas",
+  "info": {
+    "displayName": "Dual CTA",
+    "description": "Section with two call-to-action buttons",
+    "icon": "cursor"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "primaryCtaText": {
+      "type": "string",
+      "required": true
+    },
+    "primaryCtaLink": {
+      "type": "string",
+      "required": true
+    },
+    "secondaryCtaText": {
+      "type": "string"
+    },
+    "secondaryCtaLink": {
+      "type": "string"
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}

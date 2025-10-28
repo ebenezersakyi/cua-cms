@@ -2,6 +2,10 @@ module.exports = [
   'strapi::logger',
   'strapi::errors',
   {
+    name: 'global::populate-deep-transformer',
+    config: {},
+  },
+  {
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
@@ -18,10 +22,9 @@ module.exports = [
   {
     name: 'strapi::cors',
     config: {
-      origin: process.env.CORS_ORIGIN ? process.env.CORS_ORIGIN.split(',') : ['http://localhost:3000'],
-      methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS', 'PATCH'],
-      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
-      credentials: true,
+      origin: '*',
+      headers: '*',
+      methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE', 'HEAD', 'OPTIONS'],
     },
   },
   'strapi::poweredBy',

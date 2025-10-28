@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_sections_stats_highlights",
+  "info": {
+    "displayName": "Stats Highlight",
+    "description": "Statistics highlight section",
+    "icon": "chartBar"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "By the Numbers"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.impact-stat"
+    }
+  }
+}

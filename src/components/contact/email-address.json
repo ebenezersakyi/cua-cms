@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_contact_email_addresses",
+  "info": {
+    "displayName": "Email Address",
+    "description": "Contact email address with optional label",
+    "icon": "envelope"
+  },
+  "options": {},
+  "attributes": {
+    "label": {
+      "type": "string",
+      "maxLength": 50
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_elements_timeline_events",
+  "info": {
+    "displayName": "Timeline Event",
+    "description": "Individual timeline event",
+    "icon": "calendar"
+  },
+  "options": {},
+  "attributes": {
+    "year": {
+      "type": "integer",
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images"]
+    }
+  }
+}
