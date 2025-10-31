@@ -41,6 +41,11 @@
       "component": "about-pages.partner",
       "required": true
     },
+    "partnerOrganizations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::partner.partner"
+    },
     "impact_title": {
       "type": "string",
       "required": true,

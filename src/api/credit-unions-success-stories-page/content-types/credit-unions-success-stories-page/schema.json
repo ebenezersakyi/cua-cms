@@ -32,6 +32,11 @@
       "component": "sections.dual-cta",
       "required": true
     },
+    "featuredStories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::success-story.success-story"
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",

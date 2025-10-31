@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_careers_benefit_items",
+  "info": {
+    "displayName": "Benefit Item",
+    "description": "A single benefit or reason to work with the organization"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "required": true,
+      "default": "Award"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

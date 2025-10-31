@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_careers_cta_sections",
+  "info": {
+    "displayName": "CTA Section",
+    "description": "Call-to-action section for job applications"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "buttonText": {
+      "type": "string",
+      "required": true,
+      "default": "Send Your CV"
+    },
+    "buttonLink": {
+      "type": "string",
+      "required": true
+    },
+    "note": {
+      "type": "string"
+    }
+  }
+}

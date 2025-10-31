@@ -24,6 +24,11 @@
       "component": "sections.intro-with-video",
       "required": true
     },
+    "featuredGalleries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::photo-gallery.photo-gallery"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

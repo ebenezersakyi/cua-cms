@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_careers_why_work_sections",
+  "info": {
+    "displayName": "Why Work With Us Section",
+    "description": "Section highlighting benefits of working with the organization"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Why Work With Us"
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "benefits": {
+      "type": "component",
+      "repeatable": true,
+      "component": "careers.benefit-item",
+      "required": true,
+      "min": 1
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_vacancies",
+  "info": {
+    "singularName": "job-vacancy",
+    "pluralName": "job-vacancies",
+    "displayName": "Job Vacancy",
+    "description": "Job openings and career opportunities at CUA Ghana"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "department": {
+      "type": "string",
+      "required": true
+    },
+    "location": {
+      "type": "string",
+      "required": true,
+      "default": "Accra, Ghana"
+    },
+    "employmentType": {
+      "type": "enumeration",
+      "enum": ["Full-time", "Part-time", "Contract", "Internship"],
+      "default": "Full-time",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "requirements": {
+      "type": "component",
+      "repeatable": false,
+      "component": "careers.job-requirements",
+      "required": true
+    },
+    "applyUrl": {
+      "type": "string",
+      "required": true
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    },
+    "postedDate": {
+      "type": "date"
+    },
+    "closingDate": {
+      "type": "date"
+    },
+    "salary": {
+      "type": "string"
+    },
+    "experienceLevel": {
+      "type": "enumeration",
+      "enum": ["Entry Level", "Mid Level", "Senior Level", "Executive"]
+    }
+  }
+}

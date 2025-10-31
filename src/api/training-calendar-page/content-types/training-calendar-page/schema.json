@@ -30,6 +30,11 @@
       "component": "sections.dual-cta",
       "required": true
     },
+    "featuredSchedules": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-schedule.training-schedule"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

@@ -28,6 +28,11 @@
       "type": "richtext",
       "required": true
     },
+    "featuredDownloads": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::download.download"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

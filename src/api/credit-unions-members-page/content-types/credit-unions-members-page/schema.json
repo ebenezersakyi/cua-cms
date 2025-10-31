@@ -52,6 +52,11 @@
       "component": "sections.dual-cta",
       "required": true
     },
+    "featuredTestimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial-member.testimonial-member"
+    },
     "seo": {
       "type": "component",
       "component": "shared.seo",

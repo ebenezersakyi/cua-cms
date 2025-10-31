@@ -43,6 +43,7 @@ async function createPublicPermissions(strapi) {
       { api: 'tag', actions: ['find', 'findOne'] },
       { api: 'testimonial-member', actions: ['find', 'findOne'] },
       { api: 'instructor', actions: ['find', 'findOne'] },
+      { api: 'job-vacancy', actions: ['find', 'findOne'] },
 
       // Single types - only need find
       { api: 'site-setting', actions: ['find'] },
@@ -74,6 +75,7 @@ async function createPublicPermissions(strapi) {
       { api: 'photo-gallery-page', actions: ['find'] },
       { api: 'video-gallery-page', actions: ['find'] },
       { api: 'contact-page', actions: ['find'] },
+      { api: 'careers-page', actions: ['find'] },
       { api: 'statistics', actions: ['find'] },
 
       // Create permissions for forms

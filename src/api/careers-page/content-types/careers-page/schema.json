@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers_pages",
+  "info": {
+    "singularName": "careers-page",
+    "pluralName": "careers-pages",
+    "displayName": "Careers Page",
+    "description": "Careers page configuration with hero, benefits, and CTA sections"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "heroSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "sections.hero-simple",
+      "required": true
+    },
+    "whyWorkWithUs": {
+      "type": "component",
+      "repeatable": false,
+      "component": "careers.why-work-section",
+      "required": true
+    },
+    "ctaSection": {
+      "type": "component",
+      "repeatable": false,
+      "component": "careers.cta-section",
+      "required": true
+    },
+    "featuredJobs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::job-vacancy.job-vacancy"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    }
+  }
+}

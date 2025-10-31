@@ -50,6 +50,11 @@
       "type": "date",
       "required": true
     },
+    "trainingCourses": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::training-course.training-course"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

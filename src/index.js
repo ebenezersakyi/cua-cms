@@ -66,6 +66,7 @@ module.exports = {
         'tag',
         'testimonial-member',
         'instructor',
+        'job-vacancy',
       ];
 
       const singleTypes = [
@@ -104,6 +105,8 @@ module.exports = {
         'video-gallery-page',
         // Contact page
         'contact-page',
+        // Careers page
+        'careers-page',
         // Other pages
         'statistics',
       ];

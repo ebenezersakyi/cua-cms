@@ -95,6 +95,131 @@
     },
     "metaKeywords": {
       "type": "text"
+    },
+    "primaryColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#007A3D"
+    },
+    "secondaryColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFA500"
+    },
+    "accentColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#0066CC"
+    },
+    "ctaBackgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#007A3D"
+    },
+    "ctaTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFFFFF"
+    },
+    "ctaHoverBackgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#005A2D"
+    },
+    "ctaHoverTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFFFFF"
+    },
+    "ctaBorderColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#007A3D"
+    },
+    "secondaryCtaBackgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFFFFF"
+    },
+    "secondaryCtaTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#007A3D"
+    },
+    "secondaryCtaHoverBackgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#F5F5F5"
+    },
+    "secondaryCtaHoverTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#005A2D"
+    },
+    "secondaryCtaBorderColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#007A3D"
+    },
+    "headingTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#333333"
+    },
+    "bodyTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#666666"
+    },
+    "lightTextColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#999999"
+    },
+    "linkColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#0066CC"
+    },
+    "linkHoverColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#0052A3"
+    },
+    "successColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#28A745"
+    },
+    "warningColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFC107"
+    },
+    "errorColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#DC3545"
+    },
+    "infoColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#17A2B8"
+    },
+    "backgroundColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#FFFFFF"
+    },
+    "backgroundSecondaryColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#F8F9FA"
+    },
+    "borderColor": {
+      "type": "string",
+      "customField": "plugin::color-picker.color",
+      "default": "#E0E0E0"
     }
   }
 }

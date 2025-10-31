@@ -30,6 +30,11 @@
       "component": "sections.dual-cta",
       "required": true
     },
+    "featuredVideos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::video-gallery.video-gallery"
+    },
     "seo": {
       "type": "component",
       "repeatable": false,

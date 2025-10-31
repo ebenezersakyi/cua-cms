@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_careers_job_requirements",
+  "info": {
+    "displayName": "Job Requirements",
+    "description": "Structured job requirements including qualifications, experience, and skills"
+  },
+  "options": {},
+  "attributes": {
+    "qualifications": {
+      "type": "richtext",
+      "required": true
+    },
+    "experience": {
+      "type": "richtext",
+      "required": true
+    },
+    "skills": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
