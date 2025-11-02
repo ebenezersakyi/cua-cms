@@ -58,7 +58,7 @@ module.exports = {
               { description: { $containsi: searchQuery } },
             ],
           },
-          populate: ['image'],
+          populate: ['featuredImage'],
           limit: 5,
         });
 
@@ -70,7 +70,7 @@ module.exports = {
             excerpt: event.shortDescription,
             slug: event.slug,
             url: `/events/${event.slug}`,
-            image: event.image?.url,
+            image: event.featuredImage?.url,
             date: event.eventDate,
           });
         });
@@ -135,7 +135,7 @@ module.exports = {
         const courses = await strapi.entityService.findMany('api::training-course.training-course', {
           filters: {
             $or: [
-              { name: { $containsi: searchQuery } },
+              { courseName: { $containsi: searchQuery } },
               { description: { $containsi: searchQuery } },
             ],
           },
@@ -146,7 +146,7 @@ module.exports = {
           results.push({
             type: 'training-course',
             id: course.id,
-            title: course.name,
+            title: course.courseName,
             excerpt: course.description?.substring(0, 150),
             slug: course.slug,
             url: `/training/courses/${course.slug}`,

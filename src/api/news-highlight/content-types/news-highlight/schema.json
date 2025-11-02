@@ -1,11 +1,11 @@
 {
   "kind": "singleType",
-  "collectionName": "ticker_contents",
+  "collectionName": "news_highlights",
   "info": {
-    "singularName": "ticker-content",
-    "pluralName": "ticker-contents",
-    "displayName": "Ticker Content",
-    "description": "News ticker/announcement bar configuration and messages"
+    "singularName": "news-highlight",
+    "pluralName": "news-highlights",
+    "displayName": "News Highlights",
+    "description": "Featured news articles displayed as highlights on the homepage"
   },
   "options": {
     "draftAndPublish": false
@@ -16,11 +16,16 @@
       "type": "boolean",
       "default": true
     },
-    "messages": {
-      "type": "component",
-      "repeatable": true,
-      "component": "shared.ticker-message",
-      "required": false
+    "highlightedNews": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::news-article.news-article"
+    },
+    "maxItems": {
+      "type": "integer",
+      "default": 5,
+      "min": 1,
+      "max": 10
     },
     "animationSpeed": {
       "type": "enumeration",
@@ -28,11 +33,13 @@
       "default": "medium"
     },
     "backgroundColor": {
-      "type": "string",
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
       "default": "#003366"
     },
     "textColor": {
-      "type": "string",
+      "type": "customField",
+      "customField": "plugin::color-picker.color",
       "default": "#ffffff"
     },
     "pauseOnHover": {

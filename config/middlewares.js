@@ -12,8 +12,24 @@ module.exports = [
         useDefaults: true,
         directives: {
           'connect-src': ["'self'", 'https:'],
-          'img-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', 'storage.googleapis.com'],
-          'media-src': ["'self'", 'data:', 'blob:', 'dl.airtable.com', 'storage.googleapis.com'],
+          'img-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'storage.googleapis.com',
+            '*.amazonaws.com',
+            's3.amazonaws.com'
+          ],
+          'media-src': [
+            "'self'",
+            'data:',
+            'blob:',
+            'dl.airtable.com',
+            'storage.googleapis.com',
+            '*.amazonaws.com',
+            's3.amazonaws.com'
+          ],
           upgradeInsecureRequests: null,
         },
       },

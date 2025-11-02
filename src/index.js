@@ -72,7 +72,7 @@ module.exports = {
       const singleTypes = [
         'site-setting',
         'homepage-setting',
-        'ticker-content',
+        'news-highlight',
         'about-page-content',
         // New about pages
         'who-we-are-page',
@@ -252,7 +252,7 @@ async function initializeSingleTypes(strapi) {
     // Check other single types and create if needed
     const singleTypesToCheck = [
       'api::site-setting.site-setting',
-      'api::ticker-content.ticker-content',
+      'api::news-highlight.news-highlight',
       'api::about-page-content.about-page-content',
       // Add more single types as needed
     ];
