@@ -1,0 +1,57 @@
+{
+  "kind": "collectionType",
+  "collectionName": "training_registrations",
+  "info": {
+    "singularName": "training-registration",
+    "pluralName": "training-registrations",
+    "displayName": "Training Registration",
+    "description": "Store training course registration submissions"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "creditUnionName": {
+      "type": "string",
+      "required": true
+    },
+    "position": {
+      "type": "string",
+      "required": true
+    },
+    "trainingCourse": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::training-course.training-course",
+      "required": true
+    },
+    "preferredTrainingDate": {
+      "type": "date",
+      "required": true
+    },
+    "specialRequirements": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Pending", "Confirmed", "Cancelled", "Completed"],
+      "default": "Pending"
+    },
+    "adminNotes": {
+      "type": "text"
+    }
+  }
+}

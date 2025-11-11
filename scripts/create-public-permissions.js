@@ -81,6 +81,7 @@ async function createPublicPermissions(strapi) {
       // Create permissions for forms
       { api: 'newsletter-subscription', actions: ['create'] },
       { api: 'contact-message', actions: ['create'] },
+      { api: 'training-registration', actions: ['create'] },
     ];
 
     let createdCount = 0;
