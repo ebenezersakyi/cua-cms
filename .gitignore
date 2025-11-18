@@ -108,3 +108,5 @@ build
 
 .pm2
 ecosystem.config.js.bak
+
+cua-cms-server.pem
