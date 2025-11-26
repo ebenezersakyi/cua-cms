@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "direct_emails",
+  "info": {
+    "singularName": "direct-email",
+    "pluralName": "direct-emails",
+    "displayName": "Direct Email",
+    "description": "Send emails directly to specific recipients"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "recipientEmail": {
+      "type": "email",
+      "required": true
+    },
+    "recipientName": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string",
+      "required": true,
+      "maxLength": 200
+    },
+    "message": {
+      "type": "richtext",
+      "required": true
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["draft", "sent", "failed"],
+      "default": "draft"
+    },
+    "sentAt": {
+      "type": "datetime"
+    },
+    "errorMessage": {
+      "type": "text"
+    }
+  }
+}

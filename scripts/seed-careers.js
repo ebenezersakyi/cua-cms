@@ -359,7 +359,7 @@ async function seedCareers(strapi) {
         buttonLink: 'mailto:careers@cuaghana.com',
         note: 'Email your CV and cover letter to careers@cuaghana.com'
       },
-      featuredJobs: createdJobs.slice(0, 3).map(job => job.id),
+      featuredJobs: [],
       seo: {
         metaTitle: 'Careers at CUA Ghana | Join Our Team',
         metaDescription: 'Explore career opportunities at Credit Union Association Ghana. Join our mission-driven team and make an impact on financial inclusion in Ghana.',

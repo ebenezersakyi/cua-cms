@@ -114,6 +114,7 @@ module.exports = {
       const createTypes = [
         'newsletter-subscription',
         'contact-message',
+        'training-registration',
       ];
 
       let updatedCount = 0;
