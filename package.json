@@ -16,6 +16,7 @@
     "seed:ourwork": "node ./scripts/seed-our-work-pages.js",
     "seed:credit-unions": "node ./scripts/seed-credit-unions-pages.js",
     "seed:careers": "node ./scripts/seed-careers.js",
+    "cleanup:dummy-jobs": "node ./scripts/cleanup-dummy-jobs.js",
     "seed:site-settings": "node ./scripts/seed-site-settings.js",
     "fix:board-members": "node ./scripts/fix-board-members-relation.js",
     "permissions:create": "node ./scripts/create-public-permissions.js",
