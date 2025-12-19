@@ -1,0 +1,82 @@
+{
+  "kind": "collectionType",
+  "collectionName": "job_applications",
+  "info": {
+    "singularName": "job-application",
+    "pluralName": "job-applications",
+    "displayName": "Job Application",
+    "description": "Store job application submissions from candidates"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fullName": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "jobVacancy": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::job-vacancy.job-vacancy"
+    },
+    "jobTitle": {
+      "type": "string",
+      "required": true
+    },
+    "coverLetter": {
+      "type": "text",
+      "required": true
+    },
+    "resume": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files"]
+    },
+    "linkedInProfile": {
+      "type": "string"
+    },
+    "portfolioUrl": {
+      "type": "string"
+    },
+    "yearsOfExperience": {
+      "type": "string"
+    },
+    "currentEmployer": {
+      "type": "string"
+    },
+    "currentPosition": {
+      "type": "string"
+    },
+    "expectedSalary": {
+      "type": "string"
+    },
+    "availableStartDate": {
+      "type": "date"
+    },
+    "howDidYouHear": {
+      "type": "string"
+    },
+    "additionalInfo": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": ["Received", "Under Review", "Shortlisted", "Interview Scheduled", "Rejected", "Hired"],
+      "default": "Received"
+    },
+    "adminNotes": {
+      "type": "text"
+    }
+  }
+}

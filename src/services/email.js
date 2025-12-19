@@ -445,6 +445,244 @@ This is an automated notification from CUA Ghana Website
     `
   }),
 
+  // Job application confirmation to applicant
+  jobApplicationConfirmation: (data) => ({
+    subject: 'Application Received - CUA Ghana Careers',
+    html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Application Received</title>
+      </head>
+      <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
+        <div style="background: ${THEME_COLOR}; padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+          <img src="${LOGO_URL}" alt="CUA Ghana Logo" style="max-width: 180px; height: auto; margin-bottom: 15px;">
+          <h1 style="color: white; margin: 0; font-size: 24px;">Application Received!</h1>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <p style="font-size: 16px; margin-top: 0;">Dear ${data.fullName},</p>
+
+          <p style="font-size: 16px;">Thank you for your interest in joining the Credit Union Association of Ghana. We have received your application and appreciate the time you took to apply.</p>
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 25px 0; border-left: 4px solid ${THEME_COLOR};">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0;">Application Details</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 150px; color: #555;">Position:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.jobTitle}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Email:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.email}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Phone:</td>
+                <td style="padding: 10px 0;">${data.phoneNumber}</td>
+              </tr>
+            </table>
+          </div>
+
+          <p style="font-size: 16px;"><strong style="color: ${THEME_COLOR};">What happens next?</strong></p>
+          <ol style="font-size: 16px; color: #555;">
+            <li>Our HR team will review your application</li>
+            <li>Shortlisted candidates will be contacted for interviews</li>
+            <li>We aim to respond within 2-3 weeks</li>
+          </ol>
+
+          <p style="font-size: 14px; color: #666; margin-top: 30px;">
+            We appreciate your patience during our review process. If you have any questions, please contact us at careers@ccugh.com.
+          </p>
+
+          <p style="font-size: 14px; color: #666;">
+            Best regards,<br>
+            <strong style="color: ${THEME_COLOR};">Human Resources Team</strong><br>
+            CUA Ghana
+          </p>
+        </div>
+
+        <div style="text-align: center; padding: 25px 20px; color: #666; font-size: 12px;">
+          <p style="margin: 0; font-weight: bold; color: ${THEME_COLOR};">Credit Union Association of Ghana</p>
+          <p style="margin: 5px 0;">Empowering Communities Through Cooperative Finance</p>
+          <p style="margin: 15px 0 0 0;">
+            <a href="https://cua.org.gh" style="color: ${THEME_COLOR}; text-decoration: none; font-weight: bold;">www.cua.org.gh</a>
+          </p>
+        </div>
+      </body>
+      </html>
+    `,
+    text: `
+Application Received - CUA Ghana Careers
+
+Dear ${data.fullName},
+
+Thank you for your interest in joining the Credit Union Association of Ghana. We have received your application and appreciate the time you took to apply.
+
+Application Details:
+- Position: ${data.jobTitle}
+- Email: ${data.email}
+- Phone: ${data.phoneNumber}
+
+What happens next?
+1. Our HR team will review your application
+2. Shortlisted candidates will be contacted for interviews
+3. We aim to respond within 2-3 weeks
+
+We appreciate your patience during our review process. If you have any questions, please contact us at careers@ccugh.com.
+
+Best regards,
+Human Resources Team
+CUA Ghana
+
+---
+Credit Union Association of Ghana
+Empowering Communities Through Cooperative Finance
+www.cua.org.gh
+    `
+  }),
+
+  // Job application notification to careers team
+  jobApplicationNotification: (data) => ({
+    subject: `New Job Application: ${data.jobTitle} - ${data.fullName}`,
+    html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Job Application</title>
+      </head>
+      <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
+        <div style="background: ${THEME_COLOR}; padding: 25px; text-align: center; border-radius: 10px 10px 0 0;">
+          <img src="${LOGO_URL}" alt="CUA Ghana Logo" style="max-width: 150px; height: auto; margin-bottom: 10px;">
+          <h1 style="color: white; margin: 0; font-size: 22px;">New Job Application</h1>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <div style="background: #e8f4fc; padding: 15px; border-radius: 8px; margin-bottom: 20px; text-align: center;">
+            <h2 style="color: ${THEME_COLOR}; margin: 0; font-size: 20px;">${data.jobTitle}</h2>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Applicant Details</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 150px; color: #555;">Name:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.fullName}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Email:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">
+                  <a href="mailto:${data.email}" style="color: ${THEME_COLOR};">${data.email}</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Phone:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.phoneNumber}</td>
+              </tr>
+              ${data.currentEmployer ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Current Employer:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.currentEmployer}</td>
+              </tr>
+              ` : ''}
+              ${data.currentPosition ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Current Position:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.currentPosition}</td>
+              </tr>
+              ` : ''}
+              ${data.yearsOfExperience ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Experience:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.yearsOfExperience}</td>
+              </tr>
+              ` : ''}
+              ${data.expectedSalary ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Expected Salary:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.expectedSalary}</td>
+              </tr>
+              ` : ''}
+              ${data.availableStartDate ? `
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Available From:</td>
+                <td style="padding: 10px 0;">${data.availableStartDate}</td>
+              </tr>
+              ` : ''}
+            </table>
+          </div>
+
+          ${data.linkedInProfile || data.portfolioUrl ? `
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Links</h3>
+            ${data.linkedInProfile ? `<p style="margin: 5px 0;"><strong>LinkedIn:</strong> <a href="${data.linkedInProfile}" style="color: ${THEME_COLOR};">${data.linkedInProfile}</a></p>` : ''}
+            ${data.portfolioUrl ? `<p style="margin: 5px 0;"><strong>Portfolio:</strong> <a href="${data.portfolioUrl}" style="color: ${THEME_COLOR};">${data.portfolioUrl}</a></p>` : ''}
+          </div>
+          ` : ''}
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Cover Letter</h3>
+            <p style="margin: 0; white-space: pre-wrap; color: #555;">${data.coverLetter}</p>
+          </div>
+
+          ${data.additionalInfo ? `
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Additional Information</h3>
+            <p style="margin: 0; white-space: pre-wrap; color: #555;">${data.additionalInfo}</p>
+          </div>
+          ` : ''}
+
+          ${data.howDidYouHear ? `
+          <p style="font-size: 14px; color: #666;"><strong>How they heard about us:</strong> ${data.howDidYouHear}</p>
+          ` : ''}
+
+          <div style="margin-top: 25px; text-align: center;">
+            <a href="${process.env.STRAPI_ADMIN_URL || 'http://localhost:1337'}/admin/content-manager/collection-types/api::job-application.job-application"
+               style="display: inline-block; background: ${THEME_COLOR}; color: white; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+              View in Admin Panel
+            </a>
+          </div>
+        </div>
+
+        <div style="text-align: center; padding: 20px; color: #999; font-size: 11px;">
+          <p style="margin: 0;">This is an automated notification from CUA Ghana Website</p>
+        </div>
+      </body>
+      </html>
+    `,
+    text: `
+New Job Application
+
+Position: ${data.jobTitle}
+
+Applicant Details:
+- Name: ${data.fullName}
+- Email: ${data.email}
+- Phone: ${data.phoneNumber}
+- Current Employer: ${data.currentEmployer || 'Not provided'}
+- Current Position: ${data.currentPosition || 'Not provided'}
+- Years of Experience: ${data.yearsOfExperience || 'Not provided'}
+- Expected Salary: ${data.expectedSalary || 'Not provided'}
+- Available From: ${data.availableStartDate || 'Not provided'}
+
+${data.linkedInProfile ? `LinkedIn: ${data.linkedInProfile}` : ''}
+${data.portfolioUrl ? `Portfolio: ${data.portfolioUrl}` : ''}
+
+Cover Letter:
+${data.coverLetter}
+
+${data.additionalInfo ? `Additional Information:\n${data.additionalInfo}` : ''}
+
+${data.howDidYouHear ? `How they heard about us: ${data.howDidYouHear}` : ''}
+
+---
+This is an automated notification from CUA Ghana Website
+    `
+  }),
+
   // Newsletter broadcast
   newsletterBroadcast: (data) => ({
     subject: data.subject,
@@ -591,6 +829,23 @@ module.exports = {
   async sendTrainingRegistrationNotification(registration) {
     const adminEmail = process.env.ADMIN_EMAIL || 'info@cua.org.gh';
     return this.sendTemplateEmail('trainingRegistrationNotification', registration, adminEmail);
+  },
+
+  /**
+   * Send job application confirmation to applicant
+   * @param {object} application - Job application data
+   */
+  async sendJobApplicationConfirmation(application) {
+    return this.sendTemplateEmail('jobApplicationConfirmation', application, application.email);
+  },
+
+  /**
+   * Send job application notification to careers team
+   * @param {object} application - Job application data
+   */
+  async sendJobApplicationNotification(application) {
+    const careersEmail = process.env.CAREERS_EMAIL || 'careers@ccugh.com';
+    return this.sendTemplateEmail('jobApplicationNotification', application, careersEmail);
   },
 
   /**

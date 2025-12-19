@@ -115,6 +115,7 @@ module.exports = {
         'newsletter-subscription',
         'contact-message',
         'training-registration',
+        'job-application',
       ];
 
       let updatedCount = 0;
