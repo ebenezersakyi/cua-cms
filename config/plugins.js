@@ -28,6 +28,9 @@ module.exports = ({ env }) => ({
   'color-picker': {
     enabled: true,
   },
+  seo: {
+    enabled: true,
+  },
   email: {
     config: {
       provider: 'nodemailer',
