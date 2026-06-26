@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_sections_member_resources",
+  "info": {
+    "displayName": "Member Resources",
+    "description": "Grid of member resource cards (handbook, calendar, support, etc.)",
+    "icon": "grid"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "default": "Member Resources"
+    },
+    "description": {
+      "type": "text",
+      "default": "Access helpful resources and tools to make the most of your Credit Union membership."
+    },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "elements.member-resource-card"
+    }
+  }
+}

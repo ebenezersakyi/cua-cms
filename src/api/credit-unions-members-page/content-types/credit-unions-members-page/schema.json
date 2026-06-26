@@ -47,6 +47,11 @@
       "component": "sections.member-testimonials",
       "required": true
     },
+    "memberResourcesSection": {
+      "type": "component",
+      "component": "sections.member-resources",
+      "required": false
+    },
     "ctaSection": {
       "type": "component",
       "component": "sections.dual-cta",

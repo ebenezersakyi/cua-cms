@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_elements_member_resource_cards",
+  "info": {
+    "displayName": "Member Resource Card",
+    "description": "A single member resource card with an icon and a download or link button",
+    "icon": "file"
+  },
+  "options": {},
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "FiFileText",
+      "description": "Icon name, e.g. FiDownload, FiCalendar, FiMail"
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "buttonLabel": {
+      "type": "string",
+      "required": true,
+      "default": "Learn More"
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["files", "images"],
+      "description": "Upload a file here for a download button (e.g. the Member Handbook PDF)"
+    },
+    "link": {
+      "type": "string",
+      "description": "Internal path (e.g. /training/training-calendar) or full external URL. Ignored when a file is uploaded."
+    }
+  }
+}
