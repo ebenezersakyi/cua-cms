@@ -445,6 +445,259 @@ This is an automated notification from CUA Ghana Website
     `
   }),
 
+  // Conference registration confirmation to registrant
+  conferenceRegistrationConfirmation: (data) => ({
+    subject: 'Conference Registration Received - 24th CUA Educational & Biennial Conference 2026',
+    html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conference Registration Confirmation</title>
+      </head>
+      <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
+        <div style="background: ${THEME_COLOR}; padding: 30px; text-align: center; border-radius: 10px 10px 0 0;">
+          <img src="${LOGO_URL}" alt="CUA Ghana Logo" style="max-width: 180px; height: auto; margin-bottom: 15px;">
+          <h1 style="color: white; margin: 0; font-size: 24px;">Registration Received!</h1>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <p style="font-size: 16px; margin-top: 0;">Dear ${data.fullName},</p>
+
+          <p style="font-size: 16px;">Thank you for registering for the <strong>24th CUA Educational &amp; Biennial Conference 2026</strong>. We have received your registration and will process it shortly.</p>
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 25px 0; border-left: 4px solid ${THEME_COLOR};">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0;">Conference Details</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 150px; color: #555;">Theme:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">"Strengthening Credit Unions for Sustainable Growth in a Changing Financial Landscape"</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Arrival Date:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">27th September 2026</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Conference Dates:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">28th - 30th September 2026</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Venue:</td>
+                <td style="padding: 10px 0;">Credit Unions Training Centre (CUTraC), Kasoa</td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 25px 0; border-left: 4px solid ${THEME_COLOR};">
+            <h3 style="color: ${THEME_COLOR}; margin-top: 0;">Your Registration</h3>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 150px; color: #555;">Credit Union:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.creditUnion}</td>
+              </tr>
+              ${data.chapter ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Chapter:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.chapter}</td>
+              </tr>
+              ` : ''}
+              ${data.role ? `
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Role:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.role}</td>
+              </tr>
+              ` : ''}
+              ${data.tshirtSize ? `
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">T-Shirt Size:</td>
+                <td style="padding: 10px 0;">${data.tshirtSize}</td>
+              </tr>
+              ` : ''}
+            </table>
+          </div>
+
+          <p style="font-size: 16px;"><strong style="color: ${THEME_COLOR};">What happens next?</strong></p>
+          <ol style="font-size: 16px; color: #555;">
+            <li>Our team will review your registration</li>
+            <li>You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,300.00)</li>
+            <li>Once payment is confirmed, you'll receive full conference information</li>
+          </ol>
+
+          <p style="font-size: 14px; color: #666; margin-top: 30px;">
+            If you have any questions, please contact us at info@cua.org.gh or call 0302220299 / 0550074632 / 0242549405 / 0554625005.
+          </p>
+
+          <p style="font-size: 14px; color: #666;">
+            Best regards,<br>
+            <strong style="color: ${THEME_COLOR};">CUA Ghana</strong>
+          </p>
+        </div>
+
+        <div style="text-align: center; padding: 25px 20px; color: #666; font-size: 12px;">
+          <p style="margin: 0; font-weight: bold; color: ${THEME_COLOR};">Credit Union Association of Ghana</p>
+          <p style="margin: 5px 0;">Empowering Communities Through Cooperative Finance</p>
+          <p style="margin: 15px 0 0 0;">
+            <a href="https://cua.org.gh" style="color: ${THEME_COLOR}; text-decoration: none; font-weight: bold;">www.cua.org.gh</a>
+          </p>
+        </div>
+      </body>
+      </html>
+    `,
+    text: `
+Conference Registration Received - 24th CUA Educational & Biennial Conference 2026
+
+Dear ${data.fullName},
+
+Thank you for registering for the 24th CUA Educational & Biennial Conference 2026. We have received your registration and will process it shortly.
+
+Conference Details:
+- Theme: "Strengthening Credit Unions for Sustainable Growth in a Changing Financial Landscape"
+- Arrival Date: 27th September 2026
+- Conference Dates: 28th - 30th September 2026
+- Venue: Credit Unions Training Centre (CUTraC), Kasoa
+
+Your Registration:
+- Credit Union / Institution: ${data.creditUnion}
+${data.chapter ? `- Chapter: ${data.chapter}` : ''}
+${data.role ? `- Role: ${data.role}` : ''}
+${data.tshirtSize ? `- T-Shirt Size: ${data.tshirtSize}` : ''}
+
+What happens next?
+1. Our team will review your registration
+2. You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,300.00)
+3. Once payment is confirmed, you'll receive full conference information
+
+If you have any questions, please contact us at info@cua.org.gh or call 0302220299 / 0550074632 / 0242549405 / 0554625005.
+
+Best regards,
+CUA Ghana
+
+---
+Credit Union Association of Ghana
+Empowering Communities Through Cooperative Finance
+www.cua.org.gh
+    `
+  }),
+
+  // Conference registration notification to admin
+  conferenceRegistrationNotification: (data) => ({
+    subject: `New Conference Registration: ${data.fullName}`,
+    html: `
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New Conference Registration</title>
+      </head>
+      <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333; max-width: 600px; margin: 0 auto; padding: 20px; background-color: #f4f4f4;">
+        <div style="background: ${THEME_COLOR}; padding: 25px; text-align: center; border-radius: 10px 10px 0 0;">
+          <img src="${LOGO_URL}" alt="CUA Ghana Logo" style="max-width: 150px; height: auto; margin-bottom: 10px;">
+          <h1 style="color: white; margin: 0; font-size: 22px;">New Conference Registration</h1>
+          <p style="color: rgba(255,255,255,0.9); margin: 8px 0 0 0; font-size: 14px;">24th CUA Educational &amp; Biennial Conference 2026</p>
+        </div>
+
+        <div style="background: #ffffff; padding: 30px; border-radius: 0 0 10px 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Registrant Details</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 160px; color: #555;">Name:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.fullName}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Gender:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.gender || 'Not specified'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Age:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.age || 'Not specified'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Email:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">
+                  <a href="mailto:${data.email}" style="color: ${THEME_COLOR};">${data.email}</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Phone:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.phoneNumber}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Credit Union:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.creditUnion}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Chapter:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.chapter || 'Not specified'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Role:</td>
+                <td style="padding: 10px 0;">${data.role || 'Not specified'}</td>
+              </tr>
+            </table>
+          </div>
+
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Logistics</h2>
+            <table style="width: 100%; border-collapse: collapse;">
+              <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; width: 160px; color: #555;">T-Shirt Size:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.tshirtSize || 'Not specified'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Dietary Restrictions:</td>
+                <td style="padding: 10px 0;">${data.dietaryRestrictions || 'None'}</td>
+              </tr>
+            </table>
+          </div>
+
+          ${data.expectations ? `
+          <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
+            <h2 style="color: ${THEME_COLOR}; margin-top: 0; font-size: 18px;">Expectations</h2>
+            <p style="margin: 0; white-space: pre-wrap; color: #555;">${data.expectations}</p>
+          </div>
+          ` : ''}
+
+          <div style="margin-top: 25px; text-align: center;">
+            <a href="${process.env.STRAPI_ADMIN_URL || 'http://localhost:1337'}/admin/content-manager/collection-types/api::conference-registration.conference-registration"
+               style="display: inline-block; background: ${THEME_COLOR}; color: white; padding: 12px 28px; text-decoration: none; border-radius: 5px; font-weight: bold;">
+              View in Admin Panel
+            </a>
+          </div>
+        </div>
+
+        <div style="text-align: center; padding: 20px; color: #999; font-size: 11px;">
+          <p style="margin: 0;">This is an automated notification from CUA Ghana Website</p>
+        </div>
+      </body>
+      </html>
+    `,
+    text: `
+New Conference Registration - 24th CUA Educational & Biennial Conference 2026
+
+Registrant Details:
+- Name: ${data.fullName}
+- Gender: ${data.gender || 'Not specified'}
+- Age: ${data.age || 'Not specified'}
+- Email: ${data.email}
+- Phone: ${data.phoneNumber}
+- Credit Union / Institution: ${data.creditUnion}
+- Chapter: ${data.chapter || 'Not specified'}
+- Role: ${data.role || 'Not specified'}
+
+Logistics:
+- T-Shirt Size: ${data.tshirtSize || 'Not specified'}
+- Dietary Restrictions: ${data.dietaryRestrictions || 'None'}
+
+${data.expectations ? `Expectations:\n${data.expectations}` : ''}
+
+---
+This is an automated notification from CUA Ghana Website
+    `
+  }),
+
   // Job application confirmation to applicant
   jobApplicationConfirmation: (data) => ({
     subject: 'Application Received - CUA Ghana Careers',
@@ -829,6 +1082,23 @@ module.exports = {
   async sendTrainingRegistrationNotification(registration) {
     const adminEmail = process.env.ADMIN_EMAIL || 'info@cua.org.gh';
     return this.sendTemplateEmail('trainingRegistrationNotification', registration, adminEmail);
+  },
+
+  /**
+   * Send conference registration confirmation to registrant
+   * @param {object} registration - Conference registration data
+   */
+  async sendConferenceRegistrationConfirmation(registration) {
+    return this.sendTemplateEmail('conferenceRegistrationConfirmation', registration, registration.email);
+  },
+
+  /**
+   * Send conference registration notification to admin
+   * @param {object} registration - Conference registration data
+   */
+  async sendConferenceRegistrationNotification(registration) {
+    const adminEmail = process.env.ADMIN_EMAIL || 'info@cua.org.gh';
+    return this.sendTemplateEmail('conferenceRegistrationNotification', registration, adminEmail);
   },
 
   /**

@@ -116,6 +116,7 @@ module.exports = {
         'contact-message',
         'training-registration',
         'job-application',
+        'conference-registration',
       ];
 
       let updatedCount = 0;
@@ -172,11 +173,19 @@ module.exports = {
 
       // Update permissions for create endpoints
       for (const apiName of createTypes) {
-        const createPermission = permissions.find(
-          p => p.action === `api::${apiName}.${apiName}.create`
-        );
+        const action = `api::${apiName}.${apiName}.create`;
+        const createPermission = permissions.find(p => p.action === action);
 
-        if (createPermission && !createPermission.enabled) {
+        if (!createPermission) {
+          // Permission record doesn't exist yet (new content type) — create it
+          await strapi.db
+            .query('plugin::users-permissions.permission')
+            .create({
+              data: { action, role: publicRole.id },
+            });
+          console.log(`✅ Created & enabled: ${apiName} - create`);
+          updatedCount++;
+        } else if (!createPermission.enabled) {
           await strapi.db
             .query('plugin::users-permissions.permission')
             .update({
