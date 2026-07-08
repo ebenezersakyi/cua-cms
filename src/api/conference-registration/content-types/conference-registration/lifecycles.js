@@ -17,12 +17,14 @@ module.exports = {
       age: result.age,
       phoneNumber: result.phoneNumber,
       email: result.email,
+      emergencyContact: result.emergencyContact,
       creditUnion: result.creditUnion,
       chapter: result.chapter,
       role: result.role,
       expectations: result.expectations,
       tshirtSize: result.tshirtSize,
       dietaryRestrictions: result.dietaryRestrictions,
+      excursionAccra: result.excursionAccra,
     };
 
     // Send confirmation email to registrant

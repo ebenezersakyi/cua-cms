@@ -520,7 +520,7 @@ This is an automated notification from CUA Ghana Website
           <p style="font-size: 16px;"><strong style="color: ${THEME_COLOR};">What happens next?</strong></p>
           <ol style="font-size: 16px; color: #555;">
             <li>Our team will review your registration</li>
-            <li>You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,300.00)</li>
+            <li>You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,200.00)</li>
             <li>Once payment is confirmed, you'll receive full conference information</li>
           </ol>
 
@@ -530,12 +530,12 @@ This is an automated notification from CUA Ghana Website
 
           <p style="font-size: 14px; color: #666;">
             Best regards,<br>
-            <strong style="color: ${THEME_COLOR};">CUA Ghana</strong>
+            <strong style="color: ${THEME_COLOR};">Ghana Co-operative Credit Unions Association (CUA Ltd.)</strong>
           </p>
         </div>
 
         <div style="text-align: center; padding: 25px 20px; color: #666; font-size: 12px;">
-          <p style="margin: 0; font-weight: bold; color: ${THEME_COLOR};">Credit Union Association of Ghana</p>
+          <p style="margin: 0; font-weight: bold; color: ${THEME_COLOR};">Ghana Co-operative Credit Unions Association (CUA Ltd.)</p>
           <p style="margin: 5px 0;">Empowering Communities Through Cooperative Finance</p>
           <p style="margin: 15px 0 0 0;">
             <a href="https://cua.org.gh" style="color: ${THEME_COLOR}; text-decoration: none; font-weight: bold;">www.cua.org.gh</a>
@@ -565,16 +565,16 @@ ${data.tshirtSize ? `- T-Shirt Size: ${data.tshirtSize}` : ''}
 
 What happens next?
 1. Our team will review your registration
-2. You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,300.00)
+2. You'll receive a confirmation with payment details (Delegates: GHC 2,600.00 | Participants: GHC 2,200.00)
 3. Once payment is confirmed, you'll receive full conference information
 
 If you have any questions, please contact us at info@cua.org.gh or call 0302220299 / 0550074632 / 0242549405 / 0554625005.
 
 Best regards,
-CUA Ghana
+Ghana Co-operative Credit Unions Association (CUA Ltd.)
 
 ---
-Credit Union Association of Ghana
+Ghana Co-operative Credit Unions Association (CUA Ltd.)
 Empowering Communities Through Cooperative Finance
 www.cua.org.gh
     `
@@ -625,6 +625,10 @@ www.cua.org.gh
                 <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.phoneNumber}</td>
               </tr>
               <tr>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Emergency Contact:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.emergencyContact || 'Not specified'}</td>
+              </tr>
+              <tr>
                 <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Credit Union:</td>
                 <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.creditUnion}</td>
               </tr>
@@ -647,8 +651,12 @@ www.cua.org.gh
                 <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.tshirtSize || 'Not specified'}</td>
               </tr>
               <tr>
-                <td style="padding: 10px 0; font-weight: bold; color: #555;">Dietary Restrictions:</td>
-                <td style="padding: 10px 0;">${data.dietaryRestrictions || 'None'}</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee; font-weight: bold; color: #555;">Dietary Restrictions:</td>
+                <td style="padding: 10px 0; border-bottom: 1px solid #eee;">${data.dietaryRestrictions || 'None'}</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px 0; font-weight: bold; color: #555;">Excursion (Accra):</td>
+                <td style="padding: 10px 0;">${data.excursionAccra ? 'Yes, interested' : 'No'}</td>
               </tr>
             </table>
           </div>
@@ -683,6 +691,7 @@ Registrant Details:
 - Age: ${data.age || 'Not specified'}
 - Email: ${data.email}
 - Phone: ${data.phoneNumber}
+- Emergency Contact: ${data.emergencyContact || 'Not specified'}
 - Credit Union / Institution: ${data.creditUnion}
 - Chapter: ${data.chapter || 'Not specified'}
 - Role: ${data.role || 'Not specified'}
@@ -690,6 +699,7 @@ Registrant Details:
 Logistics:
 - T-Shirt Size: ${data.tshirtSize || 'Not specified'}
 - Dietary Restrictions: ${data.dietaryRestrictions || 'None'}
+- Excursion (Accra): ${data.excursionAccra ? 'Yes, interested' : 'No'}
 
 ${data.expectations ? `Expectations:\n${data.expectations}` : ''}
 

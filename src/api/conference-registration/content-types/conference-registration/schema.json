@@ -34,6 +34,9 @@
       "type": "email",
       "required": true
     },
+    "emergencyContact": {
+      "type": "string"
+    },
     "creditUnion": {
       "type": "string",
       "required": true
@@ -53,6 +56,10 @@
     },
     "dietaryRestrictions": {
       "type": "text"
+    },
+    "excursionAccra": {
+      "type": "boolean",
+      "default": false
     },
     "status": {
       "type": "enumeration",
