@@ -7,7 +7,23 @@ module.exports = {
    *
    * This gives you an opportunity to extend code.
    */
-  register(/*{ strapi }*/) {},
+  register({ strapi }) {
+    // Admin-only CSV export for conference registrations.
+    // Registered here because routers under src/api are always forced to
+    // the content-api type; admin-authenticated routes must be added directly.
+    strapi.server.routes({
+      type: 'admin',
+      prefix: '',
+      routes: [
+        {
+          method: 'GET',
+          path: '/conference-registrations/export',
+          handler: 'api::conference-registration.conference-registration.exportCsv',
+          config: { policies: [] },
+        },
+      ],
+    });
+  },
 
   /**
    * An asynchronous bootstrap function that runs before
