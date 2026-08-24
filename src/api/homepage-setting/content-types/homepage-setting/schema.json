@@ -115,6 +115,10 @@
       "type": "boolean",
       "default": true
     },
+    "showConferencePromo": {
+      "type": "boolean",
+      "default": true
+    },
     "seoTitle": {
       "type": "string"
     },
